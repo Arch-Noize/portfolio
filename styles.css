@@ -12,10 +12,6 @@
   display: flex;
 }
 
-.top {
-  position: absolute;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -33,6 +29,7 @@
   align-items: center;
   background-size: cover;
   margin-top: 29.05px;
+  column-gap: 20px;
 }
 
 .buttons {
