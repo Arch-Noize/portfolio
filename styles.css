@@ -5,12 +5,12 @@
 }
 
 .title {
-    color: #36B37E;
+    color: #36b37e;
 }
 
 .bar {
     display: flex;
-} 
+}
 
 .top {
     position: absolute;
@@ -50,7 +50,7 @@
 
 .text {
     display: flex;
-    width:120%;
+    width: 120%;
     height: auto;
     flex-direction: column;
     margin-top: 15px;
@@ -63,7 +63,7 @@
     font-size: 2.5em;
     line-height: 52px;
     text-align: center;
-    color: #172B4D;
+    color: #172b4d;
 }
 
 .text p {
@@ -73,14 +73,5 @@
     font-size: 1.2em;
     line-height: 28px;
     text-align: center;
-    color: #172B4D;
+    color: #172b4d;
 }
-
-@media all and (min-width: 375px) {
-    
-}
-
-@media all and (min-width: 768px) {
-
-}
-
