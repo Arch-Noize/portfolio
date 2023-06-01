@@ -31,7 +31,7 @@
 .socials {
   display: flex;
   align-items: center;
-  background-size:cover;
+  background-size: cover;
   margin-top: 29.05px;
 }
 
@@ -43,7 +43,7 @@
 .head {
   display: flex;
   flex-direction: column;
-  width:120%;
+  width: 120%;
   height: auto;
   margin-top: 10px;
 }
@@ -52,12 +52,12 @@
   display: flex;
   width: 120%;
   height: auto;
-  lex-direction: column;
+  flex-direction: column;
   margin-top: 15px;
 }
 
 .head h2 {
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.5em;
@@ -67,7 +67,7 @@
 }
 
 .text p {
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.2em;
