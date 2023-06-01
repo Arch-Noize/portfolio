@@ -12,6 +12,10 @@
     display: flex;
 } 
 
+.top {
+    position: absolute;
+}
+
 .container{
     display: flex;
     flex-direction: column;
