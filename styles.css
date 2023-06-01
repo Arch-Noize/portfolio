@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.title{
+.title {
     color: #36B37E;
 }
 
@@ -16,7 +16,7 @@
     position: absolute;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -28,19 +28,19 @@
     overflow: scroll;
 }
 
-.socials{
+.socials {
     display: flex;
     align-items: center;
     background-size:cover;
     margin-top: 29.05px;
 }
 
-.buttons{
+.buttons {
     display: flex;
     margin-top: 82.5px;
 }
 
-.head{
+.head {
     display: flex;
     flex-direction: column;
     width:120%;
@@ -48,7 +48,7 @@
     margin-top: 10px;
 }
 
-.text{
+.text {
     display: flex;
     width:120%;
     height: auto;
@@ -56,7 +56,7 @@
     margin-top: 15px;
 }
 
-.head h2{
+.head h2 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -66,7 +66,7 @@
     color: #172B4D;
 }
 
-.text p{
+.text p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
