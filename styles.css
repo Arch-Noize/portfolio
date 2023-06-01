@@ -8,7 +8,11 @@
   color: #36b37e;
 }
 
-.bar {
+ul {
+  list-style: none;
+}
+
+.bar-container {
   display: flex;
 }
 
