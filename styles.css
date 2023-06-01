@@ -10,7 +10,6 @@
 
 .bar {
     display: flex;
-    border: 2px solid goldenrod;
 } 
 
 .container{
@@ -18,7 +17,6 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
-    border: 5px solid green;
     align-items: center;
     padding: 45px;
     background-image: url("/Images/header_illustration.png");
@@ -28,7 +26,6 @@
 
 .socials{
     display: flex;
-    border: 2px solid purple;
     align-items: center;
     background-size:cover;
     margin-top: 29.05px;
@@ -36,7 +33,6 @@
 
 .buttons{
     display: flex;
-    border: 2px solid pink;
     margin-top: 82.5px;
 }
 
@@ -45,7 +41,6 @@
     flex-direction: column;
     width:120%;
     height: auto;
-    border: 2px solid #ff8060;
     margin-top: 10px;
 }
 
@@ -54,7 +49,6 @@
     width:120%;
     height: auto;
     flex-direction: column;
-    border: 2px solid blue;
     margin-top: 15px;
 }
 
@@ -86,4 +80,3 @@
 
 }
 
-/* */
