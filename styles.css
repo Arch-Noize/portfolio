@@ -23,6 +23,7 @@
   padding: 45px;
   background-image: url("/Images/header_illustration.png");
   background-size: cover;
+  
 }
 
 .socials {
@@ -81,4 +82,41 @@
   line-height: 28px;
   text-align: center;
   color: #172b4d;
+}
+
+.a-container {
+  display: flex;
+  border: 2px solid blue;
+  flex-direction: column;
+  height: 100%;
+  width: 120%;
+  align-items: center;
+  padding: 50px;
+  margin-top: 68px;
+}
+
+.about{
+  display: flex;
+  border: 2px solid greenyellow;
+  flex-direction: column;
+  width: 120%;
+  height: auto;
+}
+
+.about h2 {
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.resume {
+  display: flex;
+  color: white;
+  background: #36b37f;
+  border-radius: 4px;
+  margin-top: 24px;
+  width: 60%;
+  height: 1200%;
 }
