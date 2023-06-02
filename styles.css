@@ -193,7 +193,7 @@ button {
 }
 
 button:hover {
-  box-shadow: 0px 8px 16px #36b37f3d;
+  box-shadow: 1px 8px 16px #36b37f3d;
 }
 
 button:active {
@@ -216,7 +216,7 @@ button:active {
   margin-top: 40px;
   align-self: center;
   background-color: #fff;
-  box-shadow: 0px 16px 24px #252f8914;
+  box-shadow: 1px 16px 24px #252f8914;
   border-radius: 50%;
   background-image: url("Images/languages.png");
   background-repeat: no-repeat;
