@@ -8,10 +8,6 @@
   color: #36b37e;
 }
 
-ul {
-  list-style: none;
-}
-
 .bar-container {
   display: flex;
 }
@@ -25,7 +21,6 @@ ul {
   padding: 45px;
   background-image: url("/Images/header_illustration.png");
   background-size: cover;
-  overflow: scroll;
 }
 
 .socials {
@@ -34,6 +29,19 @@ ul {
   background-size: cover;
   margin-top: 29.05px;
   column-gap: 20px;
+  flex-direction: row;
+}
+
+.socials ul {
+  list-style-type: none;
+}
+
+.socials li {
+  display: inline;
+}
+
+.socials a {
+  text-decoration: none; 
 }
 
 .buttons {
