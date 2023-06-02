@@ -263,7 +263,7 @@ button:active {
   padding: 12px 10px;
 }
 
- .fw {
+.fw {
   display: flex;
   width: 5em;
   height: 5em;
@@ -314,7 +314,7 @@ button:active {
   margin-right: 8px;
   border-radius: 4px;
   padding: 12px 10px;
-} 
+}
 
 .sk {
   display: flex;
