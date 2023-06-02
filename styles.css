@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
 }
 
 .title {
@@ -65,9 +67,7 @@
   margin-top: 15px;
 }
 
-.head h2 {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
+.head h1 {
   font-weight: 700;
   font-size: 2.5em;
   line-height: 52px;
@@ -76,8 +76,6 @@
 }
 
 .text p {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 1.2em;
   line-height: 28px;
