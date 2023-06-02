@@ -154,7 +154,6 @@ button {
   border-radius: 4px;
   margin-left: 5px;
   margin-right: 5px;
-  margin-block-end: 0px;
   padding: 5px;
 }
 
@@ -194,7 +193,7 @@ button {
 }
 
 button:hover {
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0px 8px 16px #36b37f3d;
 }
 
 button:active {
@@ -217,7 +216,7 @@ button:active {
   margin-top: 40px;
   align-self: center;
   background-color: #fff;
-  box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
+  box-shadow: 0px 16px 24px #252f8914;
   border-radius: 50%;
   background-image: url("Images/languages.png");
   background-repeat: no-repeat;
@@ -243,9 +242,9 @@ button:active {
 }
 
 .languages ul {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
-  list-style:none;
+  list-style: none;
   padding: 7px;
   justify-content: center;
   margin-top: 24px;
