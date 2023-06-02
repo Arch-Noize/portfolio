@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  text-align: center;
 }
 
 .title {
@@ -34,11 +35,11 @@
   flex-direction: row;
 }
 
-.socials ul {
+ul {
   list-style-type: none;
 }
 
-.socials li {
+li {
   display: inline;
 }
 
@@ -72,7 +73,6 @@
   font-weight: 700;
   font-size: 2.5em;
   line-height: 52px;
-  text-align: center;
   color: #172b4d;
 }
 
@@ -80,7 +80,6 @@ p {
   font-weight: 400;
   font-size: 1.2em;
   line-height: 28px;
-  text-align: center;
   color: #172b4d;
 }
 
@@ -92,7 +91,7 @@ p {
   align-items: center;
   padding: 12px;
   margin-top: 68px;
-  background: url("Images/ill-1_about-me.jpg") 100% -12% no-repeat, url("/Images/ill-2_about-me.jpg") 0 98% no-repeat;
+  background: url("Images/ill-1_about-me.png") 100% -12% no-repeat, url("/Images/ill-2_about-me.png") 0 98% no-repeat;
   background-size: 20%;
 }
 
@@ -116,7 +115,6 @@ p {
   font-weight: 700;
   font-size: 2.5em;
   line-height: 52px;
-  text-align: center;
   color: #172b4d;
 }
 
@@ -137,4 +135,25 @@ button:hover{
 
 button:active{
   background: #008552;
+}
+
+.languages{
+  display: flex;
+  flex-direction: column;
+  background-color: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 80%;
+  height: 30%;
+  margin-top: 59px;
+}
+
+.languages li{
+  justify-items: center;
+  color: #36b37f;
+  background-color: white;
+  border-radius: 4px; 
+  padding: auto;
 }
