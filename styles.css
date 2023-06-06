@@ -34,6 +34,14 @@ button {
   font-size: 1.1em;
 }
 
+button:hover {
+  box-shadow: 1px 8px 16px #36b37f3d;
+}
+
+button:active {
+  background: #008552;
+}
+
 .title {
   color: #36b37e;
 }
@@ -57,7 +65,7 @@ button {
   display: flex;
   align-items: center;
   background-size: cover;
-  margin-top: 29.05px;
+  margin-top: 29px;
   column-gap: 20px;
   flex-direction: row;
 }
@@ -77,11 +85,6 @@ button {
 
 .socials li {
   padding: 5px;
-}
-
-.buttons {
-  display: flex;
-  margin-top: 82.5px;
 }
 
 .head {
@@ -204,14 +207,6 @@ button {
   font-size: 2.5em;
   line-height: 52px;
   color: #172b4d;
-}
-
-button:hover {
-  box-shadow: 1px 8px 16px #36b37f3d;
-}
-
-button:active {
-  background: #008552;
 }
 
 .me-container {
@@ -389,6 +384,7 @@ button:active {
   width: 100%;
   align-items: center;
   padding: 45px;
+  margin-top: 20px;
   background: url("/Images/contact.png") 100% 92% no-repeat;
   background-size: 20%;
 }
@@ -401,7 +397,62 @@ button:active {
 
 .touch h2 {
   color: #172b4d;
-  margin-top: 30px;
   font-size: 2.3em;
 }
 
+.connect {
+  display: flex;
+  width: 140%;
+  height: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 24px;
+}
+
+#comment {
+  background: url("/Images/form-handle.png") 100% 100% no-repeat;
+  background-size: 10%;
+}
+
+input[type="text"],
+input[type="email"] {
+  display: flex;
+  width: 100%;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  text-align: left;
+  margin-bottom: 24px;
+  padding: 5px;
+}
+
+input::placeholder {
+  font-style: italic;
+}
+
+textarea {
+  font-size: 0.9em;
+  text-align: left;
+  border: 1px solid #60c095;
+  width: 100%;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+input:invalid {
+  box-shadow: 1px 8px 16px #de564130;
+}
+
+input:valid {
+  box-shadow: 1px 8px 16px #41de8330;
+}
+
+input:focus:invalid {
+  box-shadow: none;
+}
+
+.mail {
+  font-size: 0.9em;
+  color: #42526e;
+  margin-top: 31px;
+}
