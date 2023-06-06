@@ -141,7 +141,7 @@ button {
 
 .grid-item ul {
   width: 100%;
-  justify-self: start;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
