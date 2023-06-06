@@ -31,6 +31,7 @@ button {
   padding: 12px;
   transition: 0.4s;
   border: none;
+  font-size: 1.1em;
 }
 
 .title {
@@ -63,6 +64,19 @@ button {
 
 .socials a {
   text-decoration: none;
+}
+
+.socials ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.socials li {
+  padding: 5px;
 }
 
 .buttons {
@@ -144,7 +158,6 @@ button {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
   margin-top: 16px;
 }
 
@@ -249,7 +262,7 @@ button:active {
   padding: 7px;
   justify-content: center;
   margin-top: 24px;
-  margin-bottom: 72px;
+  margin-bottom: 24px;
   row-gap: 8px;
 }
 
@@ -302,7 +315,7 @@ button:active {
   padding: 7px;
   justify-content: center;
   margin-top: 24px;
-  margin-bottom: 72px;
+  margin-bottom: 24px;
   row-gap: 8px;
 }
 
@@ -355,7 +368,7 @@ button:active {
   padding: 7px;
   justify-content: center;
   margin-top: 24px;
-  margin-bottom: 72px;
+  margin-bottom: 24px;
   row-gap: 8px;
 }
 
@@ -368,3 +381,27 @@ button:active {
   border-radius: 4px;
   padding: 12px 10px;
 }
+
+.soc-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  padding: 45px;
+  background: url("/Images/contact.png") 100% 92% no-repeat;
+  background-size: 20%;
+}
+
+.touch {
+  display: flex;
+  flex-direction: column;
+  width: 120%;
+}
+
+.touch h2 {
+  color: #172b4d;
+  margin-top: 30px;
+  font-size: 2.3em;
+}
+
