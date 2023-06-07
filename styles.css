@@ -439,18 +439,6 @@ textarea {
   padding: 20px;
 }
 
-input:invalid {
-  box-shadow: 1px 8px 16px #de564130;
-}
-
-input:valid {
-  box-shadow: 1px 8px 16px #41de8330;
-}
-
-input:focus:invalid {
-  box-shadow: none;
-}
-
 .mail {
   font-size: 0.9em;
   color: #42526e;
