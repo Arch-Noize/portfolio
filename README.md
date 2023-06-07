@@ -104,6 +104,11 @@ Furthermore, it can't be deployed anywhere.
 - GitHub: [@Arch-Noize](https://github.com/Arch-Noize)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/santiago-ruido-a1404880/)
 
+👤 **Daniel Io**
+
+- GitHub: [@Danny-imo](https://github.com/Danny-imo)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/santiago-ruido-a1404880/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
