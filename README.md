@@ -1,110 +1,141 @@
+<a name="readme-top"></a>
 
-<div align="center">
-  <h3><b>Portfolio Mobile Exercise</b></h3>
-</div>
-
-# My first portfolio practice
 
 <!-- TABLE OF CONTENTS -->
 
-# 📗 Table of Contents
+# ￼ Table of Contents
 
-- [📖 About the Excercise](#about-ex)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
+- [￼ About the Project](#about-project)
+  - [￼ Built With](#built-with)
+- [￼ Getting Started](#getting-started)
   - [Setup](#setup)
-  - [Install](#install)
-  - [Usage](#usage)
+  - [Prerequisites](#prerequisites)
   - [Run tests](#run-tests)
-  - [Deployment](#deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+- [￼ Authors](#authors)
+- [￼ Future Features](#future-features)
+- [￼ Contributing](#contributing)
+- [￼ Show your support](#support)
+- [￼ Acknowledgements](#acknowledgements)
+- [￼ License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [About the Exercise] <a name="about-project"></a>
+# ￼ Portfolio <a name="about-project"></a>
 
-For this exercise, I will build the first two sections of a **[portfolio website using the mobile first approach]**
+- This website shows a sneak peek into the projects I have developed and deployed, showcasing my skills in HTML and CSS.With a passion for web development, I have honed my expertise in these technologies to create stunning and functional websites.
 
-## 🛠 Built With Visual Studio <a name="built-with"></a>
+## ￼ Built With <a name="built-with"></a>
 
-### Tech Stack <a name="tech-stack"></a>
-Currently, it possesses no stack or more than 
+- HTML
+- CSS
+- linter
+- HTML validation
 
-<!-- Features -->
-
-### Exercise Features <a name="key-features"></a>
-
-The exercise contains a website with:
-- A professional design
-- Button interactions 
-- Responsive design
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+## Key Features
 
-## 🚀 Live Demo <a name="live-demo"></a>
-This feature is currently unavailable
+- Use the Figma design for the project￼￼
+ - Use the semantics elements￼
+-  Use the linter for fixing errors .￼
+- Use the flexbox to place the items ￼￼
 
 <!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started"></a>
+## ￼ Getting Started <a name="getting-started"></a>
+
+
 
 To get a local copy up and running, follow these steps.
 
-### Prerequisites <a name="prerequisites"></a>
+### Prerequisites
 
 In order to run this project you need:
-- A working computer
-- Git
-- A web browser
 
-### Setup <a name="setup"></a>
+
+Example command:
+
+```sh
+1.use a browser
+2.use cable internet
+```
+ 
+
+### Setup
 
 Clone this repository to your desired folder:
 
+
+Example commands:
+
 ```sh
-  cd my-folder
-  git clone git@github.com:Arch-Noize/microverse-hello-world.git
+  
+  git clone git@github.com:Arch-Noize/setup-and-mobile-first.git
+  cd setup-and-mobile-first
+
+
 ```
 
-### Install <a name="install"></a>
 
-Is not needed for this exercise. Just clone and open `index.html`!
+### Install
 
-### Usage <a name="usage"></a>
+Install this project with:
 
-Currently, this exercise can't be used.
 
-### Run tests <a name="run-tests"></a>
+Example command:
 
-You can edit and see the website's elements by enabling Web Developer Tools. You can access this mode by pressing `Ctrl + Shift + I` on most web browsers.
+```sh
+  npm install
+```
 
-### Deployment <a name="deployment"></a>
 
-Furthermore, it can't be deployed anywhere.
+### Usage
+
+To run the project, execute the following command:
+
+
+Example command:
+
+```sh
+- Open the index with live server.
+- Or if you don't have a live server extension open the index in the browser by clicking on the file .
+```
+
+
+### Run tests
+
+To run tests for the linter, run the following command:
+
+
+Example command:
+
+```sh
+npx hint .
+npx eslint .
+```
+
+
+### Deployment
+
+You can deploy this project using:
+
+- Github Pages
+- Render.com
+- Netlify.com
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
+## ￼ Authors <a name="authors"></a>
 
-## 👥 Authors <a name="authors"></a>
-
-👤 **Santiago Ruido**
+￼ **Santiago Ruido**
 
 - GitHub: [@Arch-Noize](https://github.com/Arch-Noize)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/santiago-ruido-a1404880/)
 
-👤 **Daniel Io**
+￼ **Daniel Io**
 
 - GitHub: [@Danny-imo](https://github.com/Danny-imo)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/santiago-ruido-a1404880/)
@@ -113,40 +144,49 @@ Furthermore, it can't be deployed anywhere.
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
+## ￼ Future Features <a name="future-features"></a>
 
-This exercise will conquer the world. Soon™️.
+- [ ] Add Javascript.
+- [ ] Add more styling￼.
+- [ ] Add Popup window for the deatils of each project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
-## 🤝 Contributing <a name="contributing"></a>
+## ￼ Contributing <a name="contributing"></a>
 
-Currently, simply looking for emotional and technical contribution! 
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [Isuues Pages](https://github.com/Arch-Noize/setup-and-mobile-first/issues)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
 
-## ⭐️ Show your support <a name="support"></a>
+## ￼ Show your support <a name="support"></a>
 
-If you like this exercise, be sure to let me know through Slack or here.
+
+If you like this project kindly give it a star￼.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+## ￼ Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank the Microverse Program for helping me with their numerous guides and the help of code reviewers!
+
+I would like to thank Ekpenisi E Raphael for the immense support.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
 <!-- LICENSE -->
 
-## 📝 License <a name="license"></a>
+## ￼ License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/Arch-Noize/setup-and-mobile-first/blob/contact-form/MIT.md) licensed.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
