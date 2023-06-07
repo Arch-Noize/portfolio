@@ -199,8 +199,8 @@ button:active {
   align-items: center;
   padding: 12px;
   margin-top: 68px;
-  background: url("Images/ill-1_about-me.png") 100% -12% no-repeat, url("/Images/ill-2_about-me.png") 0 98% no-repeat;
-  background-size: 20%;
+  background: url("Images/ill-1_about-me.png") 110% -10% no-repeat, url("/Images/ill-2_about-me.png") -15% 95% no-repeat;
+  background-size: 30%;
 }
 
 .about {
