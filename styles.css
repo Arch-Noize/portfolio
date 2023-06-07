@@ -48,6 +48,9 @@ button:active {
 
 .bar-container {
   display: flex;
+  justify-content: right;
+  padding: 40px;
+  background: url("Images/app_bar.png") 90% no-repeat;
 }
 
 .container {
@@ -58,7 +61,9 @@ button:active {
   align-items: center;
   padding: 45px;
   background-image: url("/Images/header_illustration.png");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: 55% 0%;
 }
 
 .socials {
