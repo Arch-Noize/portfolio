@@ -118,6 +118,18 @@ button:active {
   align-items: center;
 }
 
+.bellow {
+  margin-top: 82px;
+}
+
+.works {
+  display: flex;
+  padding: 16px;
+  font-size: 1.7em;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
 .background {
   width: 80%;
   background-color: #d0d9d4;
