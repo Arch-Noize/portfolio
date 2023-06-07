@@ -3,28 +3,28 @@
 
 <!-- TABLE OF CONTENTS -->
 
-# ￼ Table of Contents
+# 📗 Table of Contents
 
-- [￼ About the Project](#about-project)
-  - [￼ Built With](#built-with)
-- [￼ Getting Started](#getting-started)
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+- [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Run tests](#run-tests)
-- [￼ Authors](#authors)
-- [￼ Future Features](#future-features)
-- [￼ Contributing](#contributing)
-- [￼ Show your support](#support)
-- [￼ Acknowledgements](#acknowledgements)
-- [￼ License](#license)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# ￼ Portfolio <a name="about-project"></a>
+# 📖 Portfolio <a name="about-project"></a>
 
 - This website shows a sneak peek into the projects I have developed and deployed, showcasing my skills in HTML and CSS.With a passion for web development, I have honed my expertise in these technologies to create stunning and functional websites.
 
-## ￼ Built With <a name="built-with"></a>
+## 🛠 Built With <a name="built-with"></a>
 
 - HTML
 - CSS
@@ -36,14 +36,14 @@
 
 ## Key Features
 
-- Use the Figma design for the project￼￼
- - Use the semantics elements￼
--  Use the linter for fixing errors .￼
-- Use the flexbox to place the items ￼￼
+- Use the Figma design for the project😊👌
+ - Use the semantics elements💯
+-  Use the linter for fixing errors .🚀
+- Use the flexbox to place the items 😃👍
 
 <!-- GETTING STARTED -->
 
-## ￼ Getting Started <a name="getting-started"></a>
+## 💻 Getting Started <a name="getting-started"></a>
 
 
 
@@ -128,14 +128,14 @@ You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ￼ Authors <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
-￼ **Santiago Ruido**
+👤 **Santiago Ruido**
 
 - GitHub: [@Arch-Noize](https://github.com/Arch-Noize)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/santiago-ruido-a1404880/)
 
-￼ **Daniel Io**
+👤 **Daniel Io**
 
 - GitHub: [@Danny-imo](https://github.com/Danny-imo)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/santiago-ruido-a1404880/)
@@ -144,17 +144,17 @@ You can deploy this project using:
 
 <!-- FUTURE FEATURES -->
 
-## ￼ Future Features <a name="future-features"></a>
+## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] Add Javascript.
-- [ ] Add more styling￼.
+- [ ] Add more styling💯.
 - [ ] Add Popup window for the deatils of each project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
-## ￼ Contributing <a name="contributing"></a>
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
@@ -165,16 +165,16 @@ Feel free to check the [Isuues Pages](https://github.com/Arch-Noize/setup-and-mo
 
 <!-- SUPPORT -->
 
-## ￼ Show your support <a name="support"></a>
+## ⭐️ Show your support <a name="support"></a>
 
 
-If you like this project kindly give it a star￼.
+If you like this project kindly give it a star⭐️.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## ￼ Acknowledgments <a name="acknowledgements"></a>
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
 I would like to thank Ekpenisi E Raphael for the immense support.
@@ -184,7 +184,7 @@ I would like to thank Ekpenisi E Raphael for the immense support.
 
 <!-- LICENSE -->
 
-## ￼ License <a name="license"></a>
+## 📝 License <a name="license"></a>
 
 This project is [MIT](https://github.com/Arch-Noize/setup-and-mobile-first/blob/contact-form/MIT.md) licensed.
 
