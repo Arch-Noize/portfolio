@@ -413,6 +413,7 @@ textarea {
 
   .container {
     background-size: 90%;
+    height: 120vh;
   }
 
   .menu {
@@ -425,10 +426,6 @@ textarea {
 
   .head {
     margin-top: 186px;
-  }
-
-  .container {
-    height: 120vh;
   }
 
   .me-container {
