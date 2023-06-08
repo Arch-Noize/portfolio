@@ -186,7 +186,7 @@ I would like to thank Ekpenisi E Raphael for the immense support.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Arch-Noize/setup-and-mobile-first/blob/contact-form/MIT.md) licensed.
+This project is [MIT](https://github.com/Arch-Noize/setup-and-mobile-first/MIT.md) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
