@@ -398,7 +398,12 @@ textarea {
 }
 
 @media (min-width: 768px) {
-  .head, .text, .text-a, .about, .touch, .connect{
+  .head,
+  .text,
+  .text-a,
+  .about,
+  .touch,
+  .connect {
     width: 40%;
   }
 
@@ -414,7 +419,7 @@ textarea {
     display: flex;
   }
 
-  .menu li{
+  .menu li {
     padding: 10px;
   }
 
@@ -495,17 +500,3 @@ textarea {
     margin-top: 5px;
   }
 }
-
-/* @media (min-width: 992px) and (max-width: 1200px)  {
-  .form-container {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 10px;
-    background: no-repeat 0% 75% / 9% url("/Images/contact-desk1.png"), no-repeat 20% 70% / 6% url("/Images/contact-desk2.png"), no-repeat 100% 60% / 12%  url("/Images/contact-desk3.png");
-  }
-
-  .a-container {
-    background: no-repeat top right / 8% url("Images/ill-1_about-me.png"), no-repeat bottom left / 10% url("Images/ill-2_about-me.png");
-  }
-
-} */
