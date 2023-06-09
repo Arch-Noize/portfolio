@@ -211,7 +211,7 @@ button:active {
   transition: 0.3s;
 }
 
-.grid-item li:hover {
+li:hover {
   color: #ebf0ee;
   background-color: #60c095;
   scale: 1.2;
@@ -270,9 +270,9 @@ button:active {
 }
 
 .card:hover {
-  background-color:#60c095;   
+  background-color: #60c095;
   scale: 1.1;
-  border: 2px solid #81858a; 
+  border: 2px solid #81858a;
 }
 
 .card h2 {
@@ -299,6 +299,7 @@ button:active {
   margin-right: 8px;
   border-radius: 4px;
   padding: 12px 10px;
+  transition: 0.4s;
 }
 
 #lang {
