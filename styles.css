@@ -68,7 +68,7 @@ button:active {
   width: 100%;
   align-items: center;
   padding: 45px;
-  background-image: url("/Images/header_illustration.png");
+  background-image: url("Images/header_illustration.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 55% 0%;
@@ -383,7 +383,7 @@ li:hover {
 }
 
 #comment {
-  background: url("/Images/form-handle.png") 100% 100% no-repeat;
+  background: url("Images/form-handle.png") 100% 100% no-repeat;
   background-size: 10%;
 }
 
@@ -495,7 +495,7 @@ textarea {
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 10px;
-    background: no-repeat 0% 75% / 12.5% url("/Images/contact-desk1.png"), no-repeat 20% 70% / 6% url("/Images/contact-desk2.png"), no-repeat 100% 60% / 15%  url("/Images/contact-desk3.png");
+    background: no-repeat 0% 75% / 12.5% url("Images/contact-desk1.png"), no-repeat 20% 70% / 6% url("Images/contact-desk2.png"), no-repeat 100% 60% / 15%  url("/Images/contact-desk3.png");
   }
 
   .form-container > .text {
