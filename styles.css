@@ -227,7 +227,9 @@ li:hover {
   align-items: center;
   padding: 12px;
   margin-top: 68px;
-  background: no-repeat top right / 17% url("./Images/ill-1_about-me.png"), no-repeat left bottom / 20% url("I./mages/ill-2_about-me.png");
+  background:
+    no-repeat top right / 17% url("./Images/ill-1_about-me.png"),
+    no-repeat left bottom / 20% url("I./mages/ill-2_about-me.png");
 }
 
 .about {
@@ -480,7 +482,9 @@ textarea {
   }
 
   .a-container {
-    background: no-repeat top right / 16% url("./Images/ill-1_about-me.png"), no-repeat bottom left / 16% url("./Images/ill-2_about-me.png");
+    background:
+      no-repeat top right / 16% url("./Images/ill-1_about-me.png"),
+      no-repeat bottom left / 16% url("./Images/ill-2_about-me.png");
   }
 
   .about {
@@ -495,7 +499,10 @@ textarea {
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 10px;
-    background: no-repeat 0% 75% / 12.5% url("./Images/contact-desk1.png"), no-repeat 20% 70% / 6% url("./Images/contact-desk2.png"), no-repeat 100% 60% / 15%  url("./Images/contact-desk3.png");
+    background:
+      no-repeat 0% 75% / 12.5% url("./Images/contact-desk1.png"),
+      no-repeat 20% 70% / 6% url("./Images/contact-desk2.png"),
+      no-repeat 100% 60% / 15%  url("./Images/contact-desk3.png");
   }
 
   .form-container > .text {
