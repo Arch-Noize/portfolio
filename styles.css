@@ -58,7 +58,7 @@ button:active {
   display: flex;
   justify-content: right;
   padding: 40px;
-  background: url("Images/app_bar.png") 90% no-repeat;
+  background: url("./Images/app_bar.png") 90% no-repeat;
 }
 
 .container {
@@ -68,7 +68,7 @@ button:active {
   width: 100%;
   align-items: center;
   padding: 45px;
-  background-image: url("/Images/header_illustration.png");
+  background-image: url("./Images/header_illustration.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 55% 0%;
@@ -227,7 +227,7 @@ li:hover {
   align-items: center;
   padding: 12px;
   margin-top: 68px;
-  background: no-repeat top right / 17% url("Images/ill-1_about-me.png"), no-repeat left bottom / 20% url("Images/ill-2_about-me.png");
+  background: no-repeat top right / 17% url("./Images/ill-1_about-me.png"), no-repeat left bottom / 20% url("I./mages/ill-2_about-me.png");
 }
 
 .about {
@@ -311,7 +311,7 @@ li:hover {
   background-color: #fff;
   box-shadow: 1px 16px 24px #252f8914;
   border-radius: 50%;
-  background-image: url("Images/languages.png");
+  background-image: url("./Images/languages.png");
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: 50% 50%;
@@ -326,7 +326,7 @@ li:hover {
   background-color: #fff;
   box-shadow: 1px 16px 24px #252f8914;
   border-radius: 50%;
-  background-image: url("Images/frameworks.png");
+  background-image: url("./Images/frameworks.png");
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: 50% 50%;
@@ -341,7 +341,7 @@ li:hover {
   background-color: #fff;
   box-shadow: 1px 16px 24px #252f8914;
   border-radius: 50%;
-  background-image: url("Images/skills.png");
+  background-image: url("./Images/skills.png");
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: 50% 50%;
@@ -357,7 +357,7 @@ li:hover {
   align-items: center;
   padding: 45px;
   margin-top: 20px;
-  background: url("/Images/contact-mobile.png") 100% 92% no-repeat;
+  background: url("./Images/contact-mobile.png") 100% 92% no-repeat;
   background-size: 20%;
 }
 
@@ -383,7 +383,7 @@ li:hover {
 }
 
 #comment {
-  background: url("/Images/form-handle.png") 100% 100% no-repeat;
+  background: url("./Images/form-handle.png") 100% 100% no-repeat;
   background-size: 10%;
 }
 
@@ -480,7 +480,7 @@ textarea {
   }
 
   .a-container {
-    background: no-repeat top right / 16% url("Images/ill-1_about-me.png"), no-repeat bottom left / 16% url("Images/ill-2_about-me.png");
+    background: no-repeat top right / 16% url("./Images/ill-1_about-me.png"), no-repeat bottom left / 16% url("./Images/ill-2_about-me.png");
   }
 
   .about {
@@ -495,7 +495,7 @@ textarea {
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 10px;
-    background: no-repeat 0% 75% / 12.5% url("/Images/contact-desk1.png"), no-repeat 20% 70% / 6% url("/Images/contact-desk2.png"), no-repeat 100% 60% / 15%  url("/Images/contact-desk3.png");
+    background: no-repeat 0% 75% / 12.5% url("./Images/contact-desk1.png"), no-repeat 20% 70% / 6% url("./Images/contact-desk2.png"), no-repeat 100% 60% / 15%  url("./Images/contact-desk3.png");
   }
 
   .form-container > .text {

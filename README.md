@@ -7,6 +7,7 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
+- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -22,7 +23,7 @@
 
 # 📖 Portfolio <a name="about-project"></a>
 
-- This website shows a sneak peek into the projects I have developed and deployed, showcasing my skills in HTML and CSS.With a passion for web development, I have honed my expertise in these technologies to create stunning and functional websites.
+- This website shows a sneak peek into the projects I have developed and deployed, showcasing my skills in HTML and CSS.With a passion for web development, I have honed my expertise in these technologies to create stunning and functional websites. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -31,6 +32,12 @@
 - linter
 - HTML validation
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+You can find a live version of the website [here](https://arch-noize.github.io/portfolio-microverse/)!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,7 +131,7 @@ You can deploy this project using:
 - Render.com
 - Netlify.com
 
-
+Furthermore, you can find the website live [here](https://arch-noize.github.io/portfolio-microverse/)!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
