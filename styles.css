@@ -211,7 +211,7 @@ button:active {
   transition: 0.3s;
 }
 
-li:hover {
+.grid-item li:hover {
   color: #ebf0ee;
   background-color: #60c095;
   scale: 1.2;
@@ -302,6 +302,10 @@ li:hover {
   border-radius: 4px;
   padding: 12px 10px;
   transition: 0.4s;
+}
+
+.card li:hover {
+  scale: 1.2;
 }
 
 #lang {
