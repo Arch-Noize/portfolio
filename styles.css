@@ -392,6 +392,10 @@ button:active {
   background-size: 10%;
 }
 
+label {
+  display: none;
+}
+
 input[type="text"],
 input[type="email"] {
   display: flex;
