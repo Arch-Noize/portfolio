@@ -27,7 +27,7 @@ p {
 button {
   display: flex;
   color: #fff;
-  background: #36b37f;
+  background: #227150;
   border-radius: 4px;
   margin-top: 24px;
   padding: 12px;
@@ -47,7 +47,7 @@ button:active {
 /* Head of website */
 
 .title {
-  color: #36b37e;
+  color: #227150;
 }
 
 .menu {
@@ -58,7 +58,6 @@ button:active {
   display: flex;
   justify-content: right;
   padding: 40px;
-  background: url("./Images/app_bar.png") 90% no-repeat;
 }
 
 .container {
@@ -211,9 +210,20 @@ button:active {
   transition: 0.3s;
 }
 
-li:hover {
+.card li {
+  font-size: 0.8em;
+  color: #227150;
+  background-color: #fff;
+  margin-left: 8px;
+  margin-right: 8px;
+  border-radius: 4px;
+  padding: 12px 10px;
+  transition: 0.4s;
+}
+
+.grid-item li:hover {
   color: #ebf0ee;
-  background-color: #60c095;
+  background-color: #227150;
   scale: 1.2;
 }
 
@@ -293,15 +303,8 @@ li:hover {
   row-gap: 8px;
 }
 
-.card li {
-  font-size: 0.8em;
-  color: #36b37f;
-  background-color: #fff;
-  margin-left: 8px;
-  margin-right: 8px;
-  border-radius: 4px;
-  padding: 12px 10px;
-  transition: 0.4s;
+.card li:hover {
+  scale: 1.2;
 }
 
 #lang {
@@ -387,6 +390,10 @@ li:hover {
 #comment {
   background: url("./Images/form-handle.png") 100% 100% no-repeat;
   background-size: 10%;
+}
+
+label {
+  display: none;
 }
 
 input[type="text"],
