@@ -58,7 +58,6 @@ button:active {
   display: flex;
   justify-content: right;
   padding: 40px;
-  background: url("./Images/app_bar.png") 90% no-repeat;
 }
 
 .container {
