@@ -210,6 +210,17 @@ button:active {
   transition: 0.3s;
 }
 
+.card li {
+  font-size: 0.8em;
+  color: #227150;
+  background-color: #fff;
+  margin-left: 8px;
+  margin-right: 8px;
+  border-radius: 4px;
+  padding: 12px 10px;
+  transition: 0.4s;
+}
+
 .grid-item li:hover {
   color: #ebf0ee;
   background-color: #227150;
@@ -290,17 +301,6 @@ button:active {
   margin-top: 24px;
   margin-bottom: 24px;
   row-gap: 8px;
-}
-
-.card li {
-  font-size: 0.8em;
-  color: #227150;
-  background-color: #fff;
-  margin-left: 8px;
-  margin-right: 8px;
-  border-radius: 4px;
-  padding: 12px 10px;
-  transition: 0.4s;
 }
 
 .card li:hover {
