@@ -239,7 +239,7 @@ button:active {
   margin-top: 68px;
   background:
     no-repeat top right / 17% url("./Images/ill-1_about-me.png"),
-    no-repeat left bottom / 20% url("I./mages/ill-2_about-me.png");
+    no-repeat left bottom / 20% url("./Images/ill-2_about-me.png");
 }
 
 .about {
