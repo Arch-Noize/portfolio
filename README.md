@@ -23,7 +23,7 @@
 
 # 📖 Portfolio <a name="about-project"></a>
 
-- This website shows a sneak peek into the projects I have developed and deployed, showcasing my skills in HTML and CSS.With a passion for web development, I have honed my expertise in these technologies to create stunning and functional websites. 
+- This website shows a sneak peek into the projects I have developed and deployed, showcasing my skills in HTML and CSS.With a passion for web development, I have honed my expertise in these technologies to create stunning and functional websites. You can hear me talk about my website [here](https://www.loom.com/share/42b00d2e473545c6a065885896772f58?sid=5790be37-9d3c-4916-9f02-b4816fdfed0e)!
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -140,11 +140,6 @@ Furthermore, you can find the website live [here](https://arch-noize.github.io/p
 👤 **Santiago Ruido**
 
 - GitHub: [@Arch-Noize](https://github.com/Arch-Noize)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/santiago-ruido-a1404880/)
-
-👤 **Daniel Io**
-
-- GitHub: [@Danny-imo](https://github.com/Danny-imo)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/santiago-ruido-a1404880/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
