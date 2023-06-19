@@ -24,7 +24,15 @@ p {
   color: #172b4d;
 }
 
-button {
+.burger button{
+  background: url("./Images/app_bar.png");
+}
+
+.burger:active {
+  background: url("./Images/cancel.png");
+}
+
+.normal-btn {
   display: flex;
   color: #fff;
   background: #227150;
@@ -36,11 +44,11 @@ button {
   font-size: 1.1em;
 }
 
-button:hover {
+.normal-btn:hover {
   box-shadow: 1px 8px 16px #36b37f3d;
 }
 
-button:active {
+.normal-btn:active {
   background: #008552;
 }
 
@@ -51,12 +59,17 @@ button:active {
 }
 
 .menu {
+  display: flex;
+}
+
+.menu-display {
   display: none;
 }
 
 .bar-container {
   display: flex;
   justify-content: right;
+  justify-content: center;
   padding: 40px;
 }
 
