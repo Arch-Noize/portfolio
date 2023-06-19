@@ -60,6 +60,7 @@ p {
 
 .menu {
   display: flex;
+  flex-direction: column;
 }
 
 .menu-display {
