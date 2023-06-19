@@ -8,21 +8,26 @@
     <link rel="stylesheet" href="styles.css">
 </head> 
 <body>
-    <header class="bar-container">
-        <section class="menu">
-            <ul>
-                <li>Portfolio</li>
-                <li>About</li>
-                <li>Contact</li>
-           </ul>
-        </section>
-
-        <nav>
-            <button class="burger">
-                test
-            </button>
-        </nav>
-   </header>
+    <header>
+        <div class="bar-container">
+            <nav>
+                <figure class="burger">
+                    <img src="./Images/app_bar.png" alt="">
+                </figure>
+            </nav>
+            
+            <section class="menu">
+                <figure class="cancel"> 
+                    <img src="./Images/cancel.png" alt="">
+                </figure>
+                <ul>
+                    <li class="menu-items"><a href="#portfolio"> <h2>Portfolio</h2> </a> </li>
+                    <li class="menu-items"><a href="#about"> <h2>About</h2> </a> </li>
+                    <li class="menu-items"><a href="#contact"> <h2>Contact</h2> </a> </li>
+            </ul>
+            </section>
+        </div>
+    </header>
    <div class="container">
         
        <section class="head">
@@ -52,7 +57,7 @@
     </div>
     <section>
     <div class="box">
-        <section class="works">
+        <section class="works" id="portfolio">
             <h2>My Recent Works</h2> 
         </section>
         <div class="background">
@@ -178,7 +183,7 @@
     </div>
     </section>
     <div class="a-container">
-        <section class="about">
+        <section class="about" id="about">
             <h2> 
                 About me 
             </h2>
@@ -230,7 +235,7 @@
             </ul>
         </section>
     </div>
-    <div class="form-container">
+    <div class="form-container" id="contact">
         <section class="touch">
             <h2> 
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
