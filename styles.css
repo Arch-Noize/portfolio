@@ -57,17 +57,14 @@ a {
 
 .menu {
   display: none;
-}
-
-.menu h2 {
   font-weight: 600;
+  font-size: 32px;
   color: #3a4a42;
 }
 
 .menu ul {
   display: flex;
   flex-direction: column;
-  padding: 10px;
   gap: 40px;
 }
 
@@ -76,19 +73,19 @@ a {
   flex-direction: column;
   position: fixed;
   width: 100%;
-  height: 120%;
+  height: 100%;
   padding: 0 0 100%;
   background-color: white;
-  border: 2px solid red;
   top: 0px;
+  align-items: right;
 }
 
 .bar-container {
   display: flex;
   position: relative;
   justify-content: center;
-  align-content: left;
   padding: 40px;
+  text-align: left;
 }
 
 .container {
@@ -465,23 +462,31 @@ textarea {
 
   .bar-container {
     display: flex;
+    border: 2px solid red;
   }
 
   .burger {
     display: none;
   }
 
-  .container {
-    background-size: 90%;
-    height: 120vh;
-  }
-
   .menu {
     display: flex;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .menu ul {
+    flex-direction: row;
+    justify-content: right;
   }
 
   .cancel {
     display: none;
+  }
+
+  .container {
+    background-size: 90%;
+    height: 120vh;
   }
 
   .menu li {
