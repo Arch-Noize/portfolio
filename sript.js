@@ -8,6 +8,18 @@ const modalBtn = document.querySelectorAll('.modal-btn');
 
 const closeBtn = document.querySelector('.close-btn');
 
+const modalMenu = [
+  {
+    id: 1,
+    name: "Multi-Post Stories Gain+Glory",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    image: "./Images/project.png",
+    tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
+    live: "https://arch-noize.github.io/portfolio-microverse/",
+    source: "https://github.com/Arch-Noize/portfolio-microverse",
+  }
+];
+
 function menu() {
   const menu = document.querySelector('.menu');
 
