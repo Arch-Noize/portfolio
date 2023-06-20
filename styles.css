@@ -268,7 +268,6 @@ a {
 
 .project-overlay {
   display: flex;
-  position: fixed;
   justify-content: center;
   top: 0;
   left: 0;
@@ -276,12 +275,13 @@ a {
   height: auto;
   padding: 0 0 100%;
   background-color: #c1c7d0;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .open-overlay {
   visibility: visible;
   border: 2px solid red;
+  z-index: 10;
 }
 
 .modal-container {
