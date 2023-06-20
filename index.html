@@ -8,19 +8,28 @@
     <link rel="stylesheet" href="styles.css">
 </head> 
 <body>
-    <header class="bar-container">
-        <nav>
-            <img src="./Images/app_bar.png" alt=" ">
-        </nav>
-   </header>
+    <header>
+        <div class="bar-container">
+            <nav>
+                <figure class="burger">
+                    <img src="./Images/app_bar.png" alt="">
+                </figure>
+
+                <div class="menu">
+                    <figure class="cancel"> 
+                        <img src="./Images/cancel.png" alt="">
+                    </figure>
+                    <ul>
+                        <li class="menu-item"><a href="#portfolio"> Portfolio </a> </li>
+                        <li class="menu-item"><a href="#about"> About </a> </li>
+                        <li class="menu-item"><a href="#contact"> Contact </a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
    <div class="container">
-        <section class="menu">
-            <ul>
-                <li>Portfolio</li>
-                <li>About</li>
-                <li>Contact</li>
-           </ul>
-        </section>
        <section class="head">
            <h1> 
                Hey there. I’m Santiago. 
@@ -48,7 +57,7 @@
     </div>
     <section>
     <div class="box">
-        <section class="works">
+        <section class="works" id="portfolio">
             <h2>My Recent Works</h2> 
         </section>
         <div class="background">
@@ -65,7 +74,7 @@
                     </ul>
                 </div>
                 <div class="grid-item">
-                    <button>
+                    <button class="normal-btn">
                         See Project
                     </button>
                 </div>
@@ -85,7 +94,7 @@
                     </ul>
                 </div>
                 <div class="grid-item">
-                    <button>
+                    <button class="normal-btn">
                         See Project
                     </button>
                 </div>
@@ -105,7 +114,7 @@
                     </ul>
                 </div>
                 <div class="grid-item">
-                    <button>
+                    <button class="normal-btn">
                         See Project
                     </button>
                 </div>
@@ -125,7 +134,7 @@
                     </ul>
                 </div>
                 <div class="grid-item">
-                    <button>
+                    <button class="normal-btn">
                         See Project
                     </button>
                 </div>
@@ -145,7 +154,7 @@
                     </ul>
                 </div>
                 <div class="grid-item">
-                    <button>
+                    <button class="normal-btn">
                         See Project
                     </button>
                 </div>
@@ -165,7 +174,7 @@
                     </ul>
                 </div>
                 <div class="grid-item">
-                    <button>
+                    <button class="normal-btn">
                         See Project
                     </button>
                 </div>
@@ -174,7 +183,7 @@
     </div>
     </section>
     <div class="a-container">
-        <section class="about">
+        <section class="about" id="about">
             <h2> 
                 About me 
             </h2>
@@ -185,7 +194,7 @@
                 don’t hesitate to contact me.
             </p>
         </section>
-        <button>
+        <button class="normal-btn">
             Get my resume
         </button>
     </div>
@@ -226,7 +235,7 @@
             </ul>
         </section>
     </div>
-    <div class="form-container">
+    <div class="form-container" id="contact">
         <section class="touch">
             <h2> 
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
@@ -245,7 +254,7 @@
             <input id="mail" name="mail" placeholder="Email adress" required type="email"/>
             <label for="comment">Hey I'd like to connect to...</label>
             <textarea id="comment" name="comment" maxlength="500" placeholder="Hey I’d like to connect to... " required></textarea>
-            <button>
+            <button class="normal-btn">
                 Get in touch
             </button> 
         </form>  
@@ -264,5 +273,7 @@
             </ul>
         </section>
     </footer>
+
+    <script src="/sript.js"></script>
 </body>
 </html>
