@@ -1,14 +1,13 @@
-let burger = document.querySelector('.burger');
+const burger = document.querySelector('.burger');
 
-let cancel = document.querySelector('.cancel');
+const cancel = document.querySelector('.cancel');
 
-let items = document.querySelector('.menu-items');
+const items = document.querySelector('.menu-items');
 
 function menu() {
-    let menu = document.querySelector('.menu');
+  const menu = document.querySelector('.menu');
 
-    menu.classList.toggle('menu-display');
-
+  menu.classList.toggle('menu-display');
 }
 
 burger.addEventListener('click', menu);

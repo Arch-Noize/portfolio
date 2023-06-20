@@ -26,7 +26,7 @@ p {
 
 a {
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
 }
 
 .normal-btn {
@@ -76,7 +76,7 @@ a {
   height: 100%;
   padding: 0 0 100%;
   background-color: white;
-  top: 0px;
+  top: 0;
   align-items: right;
 }
 
