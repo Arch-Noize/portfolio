@@ -59,10 +59,17 @@ a {
   display: none;
   font-weight: 600;
   font-size: 32px;
+  left: 0px;
   color: #3a4a42;
+  transition: 1s ease-in-out;
+}
+
+.cancel {
+  width: 10%;
 }
 
 .menu ul {
+  width: 10%;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -77,15 +84,14 @@ a {
   padding: 0 0 100%;
   background-color: white;
   top: 0;
-  align-items: right;
+  right: 0;
 }
 
 .bar-container {
   display: flex;
   position: relative;
-  justify-content: center;
+  justify-content: right;
   padding: 40px;
-  text-align: left;
 }
 
 .container {
@@ -462,7 +468,7 @@ textarea {
 
   .bar-container {
     display: flex;
-    border: 2px solid red;
+    justify-content: center;
   }
 
   .burger {

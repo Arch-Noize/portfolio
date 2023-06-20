@@ -2,7 +2,7 @@ const burger = document.querySelector('.burger');
 
 const cancel = document.querySelector('.cancel');
 
-const items = document.querySelector('.menu-items');
+const items = document.querySelectorAll('.menu-item');
 
 function menu() {
   const menu = document.querySelector('.menu');
@@ -14,4 +14,6 @@ burger.addEventListener('click', menu);
 
 cancel.addEventListener('click', menu);
 
-items.addEventListener('click', menu);
+items.forEach((menuItem) => {
+  menuItem.addEventListener("click", menu);
+});
