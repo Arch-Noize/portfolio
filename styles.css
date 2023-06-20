@@ -9,6 +9,10 @@
   text-align: center;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 ul {
   list-style-type: none;
 }
@@ -32,7 +36,7 @@ a {
   border-radius: 4px;
   margin-top: 24px;
   padding: 12px;
-  transition: 0.6s;
+  transition: 0.4s;
   border: none;
   font-size: 1.1em;
 }
@@ -43,6 +47,7 @@ a {
 
 .normal-btn:active {
   background: #008552;
+  scale: 1.1;
 }
 
 /* Head of website */
@@ -182,7 +187,9 @@ a {
   margin-bottom: 60px;
 }
 
-.background {
+/* Story+Post cards */
+
+.project {
   width: 80%;
   background-color: #d0d9d4;
   border: 2px solid #c1c7d0;
@@ -191,11 +198,9 @@ a {
   transition: 0.5s;
 }
 
-.background:hover {
+.project:hover {
   scale: 1.05;
 }
-
-/* Story+Post cards */
 
 .grid {
   display: grid;
@@ -207,10 +212,6 @@ a {
   gap: 10px;
   grid-auto-rows: 45% 10% 45%;
   justify-items: center;
-}
-
-.grid-item {
-  align-self: center;
 }
 
 .grid-item h2 {
@@ -258,6 +259,74 @@ a {
 }
 
 .grid-item li:hover {
+  color: #ebf0ee;
+  background-color: #227150;
+  scale: 1.2;
+}
+
+/* Modal Window Pop-up*/
+
+.project-overlay {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 0 0 100%;
+  background-color: #c1c7d0;
+  visibility: hidden;
+}
+
+.open-overlay {
+  visibility: visible;
+  border: 2px solid red;
+}
+
+.modal-container {
+  display: grid;
+  justify-items: left;
+  background-color: #fff;
+  width: 90%;
+  border-radius: 8px;
+  margin-top: 10px;
+  grid-template-columns: minmax(100px, auto);
+  gap: 10px;
+  grid-auto-rows: 45% 10% 45%;
+  padding: 20px;
+}
+
+.modal-container .close-btn {
+  position: absolute;
+  align-self: flex-end;
+  z-index: 1;
+  border: 2px solid red;
+}
+
+.modal-container p {
+  text-align: left;
+}
+
+.modal-item ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.modal-item li {
+  font-size: 0.8em;
+  color: #3a4a42;
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.modal-item li:hover {
   color: #ebf0ee;
   background-color: #227150;
   scale: 1.2;
@@ -524,7 +593,7 @@ textarea {
     gap: 20px;
   }
 
-  .background {
+  .project {
     width: 30%;
     background-color: #d0d9d4;
     border: 2px solid #c1c7d0;
