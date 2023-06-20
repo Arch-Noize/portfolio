@@ -59,7 +59,7 @@ a {
   display: none;
   font-weight: 600;
   font-size: 32px;
-  left: 0px;
+  left: 0;
   color: #3a4a42;
   transition: 1s ease-in-out;
 }
