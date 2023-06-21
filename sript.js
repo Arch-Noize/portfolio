@@ -22,74 +22,77 @@ items.forEach((menuItem) => {
 
 // Works
 
-// const story = [
-//   {
-//     id: 1,
-//     name: "Multi-Post Stories Gain+Glory",
-//     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
-//     button: "See Project",
-//   }, 
-//   {
-//     id: 2,
-//     name: "Multi-Post Stories Gain+Glory",
-//     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
-//     button: "See Project",
-//   },
-//   {
-//     id: 3,
-//     name: "Multi-Post Stories Gain+Glory",
-//     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
-//     button: "See Project",
-//   }, 
-//   {
-//     id: 4,
-//     name: "Multi-Post Stories Gain+Glory",
-//     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
-//     button: "See Project",
-//   }, 
-//   {
-//     id: 5,
-//     name: "Multi-Post Stories Gain+Glory",
-//     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
-//     button: "See Project",
-//   }, 
-//   {
-//     id: 6,
-//     name: "Multi-Post Stories Gain+Glory",
-//     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
-//     button: "See Project",
-//   }
-// ];
+const story = [
+  {
+    id: 1,
+    name: "Multi-Post Stories Gain+Glory",
+    tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
+    button: "See Project",
+  }, 
+  {
+    id: 2,
+    name: "Multi-Post Stories Gain+Glory",
+    tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
+    button: "See Project",
+  },
+  {
+    id: 3,
+    name: "Multi-Post Stories Gain+Glory",
+    tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
+    button: "See Project",
+  }, 
+  {
+    id: 4,
+    name: "Multi-Post Stories Gain+Glory",
+    tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
+    button: "See Project",
+  }, 
+  {
+    id: 5,
+    name: "Multi-Post Stories Gain+Glory",
+    tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
+    button: "See Project",
+  }, 
+  {
+    id: 6,
+    name: "Multi-Post Stories Gain+Glory",
+    tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
+    button: "See Project",
+  }
+];
 
-// const recent = document.querySelector(".story");
+const recent = document.querySelector(".works");
 
-// function stories(){
-//     let displayStory = story.map(function(item){
-  
-//     return `<div class="grid">
-//               <div class="grid-item">
-//                   <h2>${item.name}</h2>
-//               </div>
-//               <div class="grid-item">
-//                 <ul>
-//                   <li> ${item.tech[0]}</li>
-//                   <li> ${item.tech[1]} </li>
-//                   <li> ${item.tech[2]} </li>
-//                   <li> ${item.tech[3]} </li>
-//                 </ul>
-//               </div>
-//               <div class="grid-item">
-//                 <button class="btn modal-btn">
-//                   ${item.button}
-//                 </button>
-//               </div>
-//             </div>`;
-//   });
-//   displayStory = displayStory.join("");
-//   recent.innerHTML = displayStory;
-// }
+function stories(){
+    let displayStory = story.map(function(item){
+      return `<div class="recent">
+                <div class="story">
+                  <div class="grid">
+                    <div class="grid-item">
+                        <h2>${item.name}</h2>
+                    </div>
+                    <div class="grid-item">
+                      <ul>
+                        <li> ${item.tech[0]}</li>
+                        <li> ${item.tech[1]} </li>
+                        <li> ${item.tech[2]} </li>
+                        <li> ${item.tech[3]} </li>
+                      </ul>
+                    </div>
+                    <div class="grid-item">
+                      <button class="btn modal-btn">
+                        ${item.button}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>`;
+  });
+  displayStory = displayStory.join("");
+  recent.innerHTML = displayStory;
+}
 
-// window.addEventListener("DOMContentLoaded", stories);
+window.addEventListener("DOMContentLoaded", stories);
 
 // Modal pop-up window
 

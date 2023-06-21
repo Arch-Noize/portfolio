@@ -162,7 +162,7 @@ a {
   color: #172b4d;
 }
 
-.recent {
+.works {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -188,17 +188,20 @@ a {
 
 /* Story+Post cards */
 
+.recent {
+  display: grid;
+  transition: 0.5s;
+}
+
+.recent:hover {
+  scale: 1.05;
+}
+
 .story {
-  width: 80%;
   background-color: #d0d9d4;
   border: 2px solid #c1c7d0;
   border-radius: 8px;
   margin-top: 24px;
-  transition: 0.5s;
-}
-
-.story:hover {
-  scale: 1.05;
 }
 
 .grid {
@@ -593,7 +596,7 @@ textarea {
     align-content: baseline;
   }
 
-  .recent {
+  .works {
     display: flex;
     width: 100%;
     flex-direction: row;
