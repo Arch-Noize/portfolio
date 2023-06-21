@@ -22,82 +22,80 @@ items.forEach((menuItem) => {
 
 // Works
 
-const story = [
-  {
-    id: 1,
-    name: "Multi-Post Stories Gain+Glory",
-    tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
-    button: "See Project",
-  }, 
-  {
-    id: 2,
-    name: "Multi-Post Stories Gain+Glory",
-    tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
-    button: "See Project",
-  },
-  {
-    id: 3,
-    name: "Multi-Post Stories Gain+Glory",
-    tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
-    button: "See Project",
-  }, 
-  {
-    id: 4,
-    name: "Multi-Post Stories Gain+Glory",
-    tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
-    button: "See Project",
-  }, 
-  {
-    id: 5,
-    name: "Multi-Post Stories Gain+Glory",
-    tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
-    button: "See Project",
-  }, 
-  {
-    id: 6,
-    name: "Multi-Post Stories Gain+Glory",
-    tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
-    button: "See Project",
-  }
-];
+// const story = [
+//   {
+//     id: 1,
+//     name: "Multi-Post Stories Gain+Glory",
+//     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
+//     button: "See Project",
+//   }, 
+//   {
+//     id: 2,
+//     name: "Multi-Post Stories Gain+Glory",
+//     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
+//     button: "See Project",
+//   },
+//   {
+//     id: 3,
+//     name: "Multi-Post Stories Gain+Glory",
+//     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
+//     button: "See Project",
+//   }, 
+//   {
+//     id: 4,
+//     name: "Multi-Post Stories Gain+Glory",
+//     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
+//     button: "See Project",
+//   }, 
+//   {
+//     id: 5,
+//     name: "Multi-Post Stories Gain+Glory",
+//     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
+//     button: "See Project",
+//   }, 
+//   {
+//     id: 6,
+//     name: "Multi-Post Stories Gain+Glory",
+//     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
+//     button: "See Project",
+//   }
+// ];
 
-const recent = document.querySelector(".story");
+// const recent = document.querySelector(".story");
 
-function stories(){
-    let displayStory = story.map(function(item){
+// function stories(){
+//     let displayStory = story.map(function(item){
   
-    return `<div class="grid">
-              <div class="grid-item">
-                  <h2>${item.name}</h2>
-              </div>
-              <div class="grid-item">
-                <ul>
-                  <li> ${item.tech[0]}</li>
-                  <li> ${item.tech[1]} </li>
-                  <li> ${item.tech[2]} </li>
-                  <li> ${item.tech[3]} </li>
-                </ul>
-              </div>
-              <div class="grid-item">
-                <button class="normal-btn modal-btn">
-                  ${item.button}
-                </button>
-              </div>
-            </div>`;
-  });
-  displayStory = displayStory.join("");
-  recent.innerHTML = displayStory;
-}
+//     return `<div class="grid">
+//               <div class="grid-item">
+//                   <h2>${item.name}</h2>
+//               </div>
+//               <div class="grid-item">
+//                 <ul>
+//                   <li> ${item.tech[0]}</li>
+//                   <li> ${item.tech[1]} </li>
+//                   <li> ${item.tech[2]} </li>
+//                   <li> ${item.tech[3]} </li>
+//                 </ul>
+//               </div>
+//               <div class="grid-item">
+//                 <button class="btn modal-btn">
+//                   ${item.button}
+//                 </button>
+//               </div>
+//             </div>`;
+//   });
+//   displayStory = displayStory.join("");
+//   recent.innerHTML = displayStory;
+// }
 
-window.addEventListener("DOMContentLoaded", stories);
+// window.addEventListener("DOMContentLoaded", stories);
 
 // Modal pop-up window
 
-const closeBtn = document.querySelector(".close-btn");
+const projOverlay = document.querySelector(".project-overlay")
 
 const modalBtn = document.querySelector(".modal-btn");
-
-const projOverlay = document.querySelector(".project-overlay")
 
 const modalMenu = [
   {
@@ -108,16 +106,21 @@ const modalMenu = [
     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
     live: "https://arch-noize.github.io/portfolio-microverse/",
     source: "https://github.com/Arch-Noize/portfolio-microverse",
+    imgLive: "./Images/live.png",
+    imgSrc: "./Images/github.png",
+    imgCancel: "./Images/cancel.png",
   }
 ];
 
 function popup(){
+  const closeBtn = document.querySelector(".close-btn");
+
   let displayWork = modalMenu.map(function(item){
-    
+  
     return `<div class="modal-container">
               <div class="modal-item">
                   <figure class="close-btn">
-                      <img src="./Images/cancel.png" alt="">
+                      <img src="${item.imgCancel}" alt="">
                   </figure>
               </div>
 
@@ -143,14 +146,14 @@ function popup(){
               </div>
 
               <div class="modal-item">
-                  <button class="normal-btn">
+                  <button class="btn modal-btn">
                       <a href="${item.live}"> See Live </a>
+                      <img src="${item.imgLive}" alt="">
                   </button>
-              </div>
 
-              <div class="modal-item">
-                  <button class="normal-btn">
+                  <button class="btn modal-btn">
                       <a href="${item.source}"> See Source </a>
+                      <img src="${item.imgSrc}" alt="" style="filter: brightness(90)">
                   </button>
               </div>
           </div>`;
@@ -159,13 +162,13 @@ function popup(){
   projOverlay.innerHTML = displayWork;
 }
 
+window.addEventListener("DOMContentLoaded", popup);
+
 function projectDisplay(){
-  const modal = document.querySelector(".modal-container");
+  const modal = document.querySelector(".project-overlay");
 
   modal.classList.toggle("open-overlay");
 }
-
-window.addEventListener("DOMContentLoaded", popup);
 
 modalBtn.addEventListener("click", projectDisplay);
 
