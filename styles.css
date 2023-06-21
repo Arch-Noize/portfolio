@@ -531,6 +531,18 @@ textarea {
   margin-top: 31px;
 }
 
+.error {
+  box-shadow: rgba(221, 0, 0, 0.515);
+}
+
+.success {
+  box-shadow: rgba(0, 255, 76, 0.515);
+}
+
+.hide {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .head,
   .text,

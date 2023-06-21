@@ -290,11 +290,12 @@
                 If you like what you see and have a project you need coded, don’t hesitate to contact me.
             </p>
         </section>
-        <form class="connect" action="https://formspree.io/f/mwkjdnnq" method="POST" autocomplete="off">
+        <form class="connect" id="connect" action="https://formspree.io/f/mwkjdnnq" method="POST" autocomplete="off">
             <label for="name">Full name</label>
-            <input id="name" name="username" placeholder="Full name" required type="text" maxlength="30"/>
+            <input id="name" name="username" placeholder="Full name" type="text" maxlength="30" required/>
             <label for="mail">Email</label>
-            <input id="mail" name="mail" placeholder="Email adress" required type="email"/>
+            <input id="mail" name="mail" placeholder="Email adress" type="email" required/>
+            <small id="error"></small>
             <label for="comment">Hey I'd like to connect to...</label>
             <textarea id="comment" name="comment" maxlength="500" placeholder="Hey I’d like to connect to... " required></textarea>
             <button class="normal-btn form-btn">
