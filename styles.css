@@ -163,7 +163,7 @@ a {
   color: #172b4d;
 }
 
-.box {
+.recent {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -177,7 +177,7 @@ a {
 
 /* Recent Works section */
 
-.works {
+.portfolio {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -267,7 +267,7 @@ a {
 /* Modal Window Pop-up*/
 
 .project-overlay {
-  display: flex;
+  display: none;
   justify-content: center;
   top: 0;
   left: 0;
@@ -584,7 +584,7 @@ textarea {
     align-content: baseline;
   }
 
-  .box {
+  .recent {
     display: flex;
     width: 100%;
     flex-direction: row;
