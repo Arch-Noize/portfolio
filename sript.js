@@ -48,7 +48,7 @@ const email = document.getElementById('mail');
 
 const error = document.getElementById('error');
 
-const errorMsg = "Accept's only lowercase. Try"+email.toLowerCase();
+const errorMsg = "Please write your email in lowercase";
 
 form.addEventListener('submit', (event) => {
   const regexMail = /[A-Z]/;
