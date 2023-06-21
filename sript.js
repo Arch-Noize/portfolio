@@ -28,10 +28,40 @@ const story = [
     name: "Multi-Post Stories Gain+Glory",
     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
     button: "See Project",
+  }, 
+  {
+    id: 2,
+    name: "Multi-Post Stories Gain+Glory",
+    tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
+    button: "See Project",
+  },
+  {
+    id: 3,
+    name: "Multi-Post Stories Gain+Glory",
+    tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
+    button: "See Project",
+  }, 
+  {
+    id: 4,
+    name: "Multi-Post Stories Gain+Glory",
+    tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
+    button: "See Project",
+  }, 
+  {
+    id: 5,
+    name: "Multi-Post Stories Gain+Glory",
+    tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
+    button: "See Project",
+  }, 
+  {
+    id: 6,
+    name: "Multi-Post Stories Gain+Glory",
+    tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
+    button: "See Project",
   }
 ];
 
-const project = document.querySelector(".project");
+const recent = document.querySelector(".story");
 
 function stories(){
     let displayStory = story.map(function(item){
@@ -56,7 +86,7 @@ function stories(){
             </div>`;
   });
   displayStory = displayStory.join("");
-  project.innerHTML = displayStory;
+  recent.innerHTML = displayStory;
 }
 
 window.addEventListener("DOMContentLoaded", stories);

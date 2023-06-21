@@ -189,7 +189,7 @@ a {
 
 /* Story+Post cards */
 
-.project {
+.story {
   width: 80%;
   background-color: #d0d9d4;
   border: 2px solid #c1c7d0;
@@ -198,7 +198,7 @@ a {
   transition: 0.5s;
 }
 
-.project:hover {
+.story:hover {
   scale: 1.05;
 }
 
