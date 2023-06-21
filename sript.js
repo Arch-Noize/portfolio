@@ -64,29 +64,29 @@ const story = [
 const recent = document.querySelector(".works");
 
 function stories(){
-    let displayStory = story.map(function(item){
-      return `<div class="recent">
-                <div class="story">
-                  <div class="grid">
-                    <div class="grid-item">
-                        <h2>${item.name}</h2>
-                    </div>
-                    <div class="grid-item">
-                      <ul>
-                        <li> ${item.tech[0]}</li>
-                        <li> ${item.tech[1]} </li>
-                        <li> ${item.tech[2]} </li>
-                        <li> ${item.tech[3]} </li>
-                      </ul>
-                    </div>
-                    <div class="grid-item">
-                      <button class="btn modal-btn">
-                        ${item.button}
-                      </button>
-                    </div>
+  let displayStory = story.map(function(item){
+    return `<div class="recent">
+              <div class="story">
+                <div class="grid">
+                  <div class="grid-item">
+                      <h2>${item.name}</h2>
+                  </div>
+                  <div class="grid-item">
+                    <ul>
+                      <li> ${item.tech[0]}</li>
+                      <li> ${item.tech[1]} </li>
+                      <li> ${item.tech[2]} </li>
+                      <li> ${item.tech[3]} </li>
+                    </ul>
+                  </div>
+                  <div class="grid-item">
+                    <button class="btn modal-btn">
+                      ${item.button}
+                    </button>
                   </div>
                 </div>
-              </div>`;
+              </div>
+            </div>`;
   });
   displayStory = displayStory.join("");
   recent.innerHTML = displayStory;
@@ -99,6 +99,8 @@ window.addEventListener("DOMContentLoaded", stories);
 const projOverlay = document.querySelector(".project-overlay")
 
 const modalBtn = document.querySelector(".modal-btn");
+
+const closeBtn = document.querySelector(".close-btn");
 
 const modalMenu = [
   {
