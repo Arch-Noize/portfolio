@@ -28,36 +28,42 @@ const story = [
     name: "Multi-Post Stories Gain+Glory",
     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
     button: "See Project",
+    buttonPop: "modal-btn",
   }, 
   {
     id: 2,
     name: "Multi-Post Stories Gain+Glory",
     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
     button: "See Project",
+    buttonPop: "modal-btn",
   },
   {
     id: 3,
     name: "Multi-Post Stories Gain+Glory",
     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
     button: "See Project",
+    buttonPop: "modal-btn",
   }, 
   {
     id: 4,
     name: "Multi-Post Stories Gain+Glory",
     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
     button: "See Project",
+    buttonPop: "modal-btn",
   }, 
   {
     id: 5,
     name: "Multi-Post Stories Gain+Glory",
     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
     button: "See Project",
+    buttonPop: "modal-btn",
   }, 
   {
     id: 6,
     name: "Multi-Post Stories Gain+Glory",
     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
     button: "See Project",
+    buttonPop: "modal-btn",
   }
 ];
 
@@ -80,7 +86,7 @@ function stories(){
                     </ul>
                   </div>
                   <div class="grid-item">
-                    <button class="btn modal-btn">
+                    <button class="btn ${item.buttonPop}">
                       ${item.button}
                     </button>
                   </div>
@@ -88,24 +94,24 @@ function stories(){
               </div>
             </div>`;
   });
+
   displayStory = displayStory.join("");
   recent.innerHTML = displayStory;
 }
 
+
 window.addEventListener("DOMContentLoaded", stories);
+
+
 
 // Modal pop-up window
 
-const projOverlay = document.querySelector(".project-overlay")
-
-const modalBtn = document.querySelector(".modal-btn");
-
-const closeBtn = document.querySelector(".close-btn");
+const projPop = document.querySelector(".project-pop")
 
 const modalMenu = [
   {
     id: 1,
-    name: "Multi-Post Stories Gain+Glory",
+    name: "Keeping track of hundreds of components",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     image: "./Images/project.png",
     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
@@ -118,15 +124,15 @@ const modalMenu = [
 ];
 
 function popup(){
-  const closeBtn = document.querySelector(".close-btn");
-
   let displayWork = modalMenu.map(function(item){
   
     return `<div class="modal-container">
               <div class="modal-item">
+                <div class="bg-img">
                   <figure class="close-btn">
                       <img src="${item.imgCancel}" alt="">
                   </figure>
+                </div>
               </div>
 
               <div class="modal-item">
@@ -150,13 +156,13 @@ function popup(){
                   </p>
               </div>
 
-              <div class="modal-item">
-                  <button class="btn modal-btn">
+              <div class="modal-item story-btn">
+                  <button class="btn">
                       <a href="${item.live}"> See Live </a>
                       <img src="${item.imgLive}" alt="">
                   </button>
 
-                  <button class="btn modal-btn">
+                  <button class="btn">
                       <a href="${item.source}"> See Source </a>
                       <img src="${item.imgSrc}" alt="" style="filter: brightness(90)">
                   </button>
@@ -164,18 +170,16 @@ function popup(){
           </div>`;
   });
   displayWork = displayWork.join("");
-  projOverlay.innerHTML = displayWork;
+  projPop.innerHTML = displayWork;
+}
+
+function projectDisplay(){
+  const modal = document.querySelector(".project-pop");
+
+  modal.classList.toggle("open-pop");
 }
 
 window.addEventListener("DOMContentLoaded", popup);
-
-function projectDisplay(){
-  const modal = document.querySelector(".project-overlay");
-
-  modal.classList.toggle("open-overlay");
-}
-
-modalBtn.addEventListener("click", projectDisplay);
 
 closeBtn.addEventListener("click", projectDisplay);
 
