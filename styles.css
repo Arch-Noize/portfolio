@@ -532,11 +532,12 @@ textarea {
 }
 
 .error {
-  box-shadow: rgba(221, 0, 0, 0.515);
+  box-shadow: 1px 8px 16px #c71a1a78;
 }
 
-.success {
-  box-shadow: rgba(0, 255, 76, 0.515);
+small {
+  margin-bottom: 10px;
+  margin-top: -10px;
 }
 
 .hide {
