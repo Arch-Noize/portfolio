@@ -4,10 +4,6 @@ const cancel = document.querySelector('.cancel');
 
 const items = document.querySelectorAll('.menu-item');
 
-// const modalBtn = document.querySelectorAll('.modal-btn');
-
-// const closeBtn = document.querySelector('.close-btn');
-
 function menu() {
   const menu = document.querySelector('.menu');
 
@@ -27,18 +23,6 @@ function projectClose(){
 burger.addEventListener('click', menu);
 
 cancel.addEventListener('click', menu);
-
-// modalBtn.addEventListener('click', project);
-
-// closeBtn.addEventListener('click', project);
-
-// items.forEach((menuItem) => {
-//   menuItem.addEventListener("click", menu);
-// });
-
-// modalBtn.forEach((btn) => {
-//   btn.addEventListener('click', project);
-// });
 
 // Form Validation
 
