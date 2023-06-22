@@ -86,7 +86,7 @@ function stories(){
                     </ul>
                   </div>
                   <div class="grid-item">
-                    <button class="btn ${item.buttonPop}">
+                    <button class="btn modal-btn">
                       ${item.button}
                     </button>
                   </div>
@@ -94,15 +94,11 @@ function stories(){
               </div>
             </div>`;
   });
-
   displayStory = displayStory.join("");
   recent.innerHTML = displayStory;
 }
 
-
 window.addEventListener("DOMContentLoaded", stories);
-
-
 
 // Modal pop-up window
 
@@ -181,8 +177,10 @@ function projectDisplay(){
 
 window.addEventListener("DOMContentLoaded", popup);
 
-closeBtn.addEventListener("click", projectDisplay);
+window.addEventListener("DOMContentLoaded", function(){
+  let btn = document.querySelectorAll(".modal-btn");
 
-// modalBtn.forEach((btn) => {
-//   btn.addEventListener("click", project);
-// });
+  let cancel = document.querySelector(".close-btn");
+
+  cancel.addEventListener('click', projectDisplay);
+});

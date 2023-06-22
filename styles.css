@@ -278,11 +278,11 @@ a {
   background-color: #c1c7d0;
   place-items: center;
   overflow-y: hidden; 
-  visibility: hidden;
+  display: none;
 }
 
 .open-pop {
-  visibility: visible;
+  display: block;
   z-index: 10;
 }
 
