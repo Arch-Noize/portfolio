@@ -116,10 +116,10 @@ function popup(){
   
     return `<div class="modal-container">
               <div class="modal-item">
+                <figure class="close-btn">
+                  <img src="${item.imgCancel}" alt="">
+                </figure>
                 <div class="bg-img">
-                  <figure class="close-btn">
-                      <img src="${item.imgCancel}" alt="">
-                  </figure>
                 </div>
               </div>
 

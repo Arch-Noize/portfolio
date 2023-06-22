@@ -288,13 +288,30 @@ a {
   padding: 0 0 100%;
   background-color: #c1c7d0;
   place-items: center;
-  overflow-y: hidden;
   display: none;
 }
 
 .open-pop {
-  display: block;
+  display: flex;
+  justify-content: center;
   z-index: 10;
+}
+
+.bg-img {
+  width: 85em;
+  height: 15em;
+  left: 0;
+  background: no-repeat top left / cover url("./Images/works.png");
+  border-radius: 8px;
+}
+
+.close-btn {
+  position: absolute;
+  align-self: flex-end center;
+  z-index: 1;
+  right: 10%;
+  margin-top: 12px;
+  filter: brightness(90);
 }
 
 .modal-container {
@@ -311,37 +328,30 @@ a {
   padding: 20px;
 }
 
-.close-btn {
-  position: absolute;
-  align-self: flex-end center;
-  z-index: 1;
-  right: 13%;
-  margin-top: 12px;
-  filter: brightness(90);
-}
-
-.modal-container p {
-  text-align: left;
-}
-
 .modal-item {
   width: 100%;
   display: flex;
   gap: 18px;
 }
 
+.modal-container p {
+  text-align: left;
+}
+
 .modal-item h2 {
   text-align: left;
-  font-size: 32px;
+  font-size: 2.8em;
   font-weight: 600;
   line-height: 44px;
 }
 
 .modal-item ul {
   width: 100%;
+  font-size: 1.3em;
   display: flex;
   flex-wrap: wrap;
   margin-top: 16px;
+  font-weight: 600;
 }
 
 .modal-item li:hover {
@@ -354,21 +364,12 @@ a {
   scale: 1.1;
 }
 
-.bg-img {
-  width: 85em;
-  height: 15em;
-  left: 0;
-  background: no-repeat top left / cover url("./Images/works.png");
-  border-radius: 8px;
-}
-
 .buttons {
   justify-content: space-between;
   align-content: center;
   align-items: flex-start;
   padding: 8px 12px;
   font-size: 20px;
-  font-weight: 500;
 }
 
 .story-btn {
@@ -658,6 +659,52 @@ textarea {
     border: 2px solid #c1c7d0;
     border-radius: 8px;
     margin-top: 24px;
+  }
+
+  .project-pop {
+    width: 100%;
+    height: 100%;
+    padding: 10% 9%;
+    background-color: #c1c7d0d1;
+  }
+  
+  .bg-img {
+    margin-top: 78px;
+    background-size: cover;
+    height: 40em;
+    flex-grow: 1;
+    background-image: url("./Images/Snapshoot.png");
+  }
+  
+  .open-pop {
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+  }  
+
+  .buttons {
+    width: 60%;
+  }
+
+  .close-btn {
+    align-self: flex-end center;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #ebecf0;
+    z-index: 1;
+    margin-top: 12px;
+    right: 15.3%;
+    filter: none;
+  }
+
+  #live {
+    background-size: 15%;
+    background-position: 80% 50%;
+  }
+  
+  #source {
+    background-size: 17%;
+    background-position: 95% 50%;
   }
 
   .card h2 {
