@@ -28,42 +28,36 @@ const story = [
     name: "Multi-Post Stories Gain+Glory",
     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
     button: "See Project",
-    buttonPop: "modal-btn",
   }, 
   {
     id: 2,
     name: "Multi-Post Stories Gain+Glory",
     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
     button: "See Project",
-    buttonPop: "modal-btn",
   },
   {
     id: 3,
     name: "Multi-Post Stories Gain+Glory",
     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
     button: "See Project",
-    buttonPop: "modal-btn",
   }, 
   {
     id: 4,
     name: "Multi-Post Stories Gain+Glory",
     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
     button: "See Project",
-    buttonPop: "modal-btn",
   }, 
   {
     id: 5,
     name: "Multi-Post Stories Gain+Glory",
     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
     button: "See Project",
-    buttonPop: "modal-btn",
   }, 
   {
     id: 6,
     name: "Multi-Post Stories Gain+Glory",
     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
     button: "See Project",
-    buttonPop: "modal-btn",
   }
 ];
 
@@ -151,11 +145,11 @@ function popup(){
               </div>
 
               <div class="modal-item buttons">
-                  <button class="btn story-btn">
+                  <button class="btn story-btn" id="live">
                       <a href="${item.live}"> See Live </a>
                   </button>
 
-                  <button class="btn">
+                  <button class="btn story-btn" id="source">
                       <a href="${item.source}"> See Source </a>
                   </button>
               </div>
