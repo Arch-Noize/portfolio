@@ -24,12 +24,11 @@ const errorMsg = 'Please write your email in lowercase';
 
 form.addEventListener('submit', (event) => {
   const regexMail = /[A-Z]/;
-
-  if (regexMail.test(email.value)) {
+  if (regexMail.test(email.value)){
     error.innerHTML = errorMsg;
     email.classList.add('error');
     event.preventDefault();
   } if (!error.classList.classname === 'hide') {
     error.classList.add('hide');
   }
-});
+})
