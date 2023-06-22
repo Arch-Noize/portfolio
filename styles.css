@@ -362,11 +362,15 @@ a {
   border-radius: 8px;
 }
 
-.story-btn {
+.buttons {
   padding: 4px 2px 4px 0px;
   justify-content: space-between;
   align-items: flex-start;
   gap: 18px; 
+}
+
+.story-btn {
+  
 }
 
 /* About Me section */

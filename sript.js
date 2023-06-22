@@ -113,8 +113,6 @@ const modalMenu = [
     tech: ["Ruby on Rails","CSS","JavaScript","HTML"],
     live: "https://arch-noize.github.io/portfolio-microverse/",
     source: "https://github.com/Arch-Noize/portfolio-microverse",
-    imgLive: "./Images/live.png",
-    imgSrc: "./Images/github.png",
     imgCancel: "./Images/cancel.png",
   }
 ];
@@ -152,15 +150,13 @@ function popup(){
                   </p>
               </div>
 
-              <div class="modal-item story-btn">
-                  <button class="btn">
+              <div class="modal-item buttons">
+                  <button class="btn story-btn">
                       <a href="${item.live}"> See Live </a>
-                      <img src="${item.imgLive}" alt="">
                   </button>
 
                   <button class="btn">
                       <a href="${item.source}"> See Source </a>
-                      <img src="${item.imgSrc}" alt="" style="filter: brightness(90)">
                   </button>
               </div>
           </div>`;
@@ -180,10 +176,11 @@ window.addEventListener("DOMContentLoaded", popup);
 window.addEventListener("DOMContentLoaded", function(){
   let btn = document.querySelectorAll(".modal-btn");
 
-  let cancel = document.querySelector(".close-btn");
-    btn.forEach((b) => {
+  btn.forEach((b) => {
     b.addEventListener('click', projectDisplay);
   });
+
+  let cancel = document.querySelector(".close-btn");
 
   cancel.addEventListener('click', projectDisplay);
 });
