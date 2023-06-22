@@ -238,6 +238,17 @@ a {
   margin-top: 16px;
 }
 
+.modal-item li {
+  font-size: 0.8em;
+  color: #3a4a42;
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+  transition: 0.3s;
+}
+
 .grid-item li {
   font-size: 0.8em;
   color: #3a4a42;
@@ -266,7 +277,7 @@ a {
   scale: 1.2;
 }
 
-/* Modal Window Pop-up*/
+/* Modal Window Pop-up */
 
 .project-pop {
   position: fixed;
@@ -277,7 +288,7 @@ a {
   padding: 0 0 100%;
   background-color: #c1c7d0;
   place-items: center;
-  overflow-y: hidden; 
+  overflow-y: hidden;
   display: none;
 }
 
@@ -323,7 +334,7 @@ a {
   text-align: left;
   font-size: 32px;
   font-weight: 600;
-  line-height: 44px; 
+  line-height: 44px;
 }
 
 .modal-item ul {
@@ -331,17 +342,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin-top: 16px;
-}
-
-.modal-item li {
-  font-size: 0.8em;
-  color: #3a4a42;
-  background-color: #ebf0ee;
-  border-radius: 4px;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 5px;
-  transition: 0.3s;
 }
 
 .modal-item li:hover {
@@ -354,7 +354,7 @@ a {
   scale: 1.1;
 }
 
-.bg-img{
+.bg-img {
   width: 85em;
   height: 15em;
   left: 0;
