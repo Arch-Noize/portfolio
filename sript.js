@@ -23,12 +23,15 @@ const error = document.getElementById('error');
 const errorMsg = 'Please write your email in lowercase';
 
 form.addEventListener('submit', (event) => {
-  const regexMail = /[A-Z]/;
-  if (regexMail.test(email.value)){
-    error.innerHTML = errorMsg;
-    email.classList.add('error');
-    event.preventDefault();
-  } if (!error.classList.classname === 'hide') {
-    error.classList.add('hide');
-  }
+  email.addEventListener('change', function(){
+    const regexMail = /[A-Z]/;
+    if (regexMail.test(email.value)){
+      event.preventDefault();
+      error.innerHTML = errorMsg;
+      email.classList.add('error');
+    } else if (!regexMail.test(email.value)) {
+      error.classList.add('hide');
+      email.classList.remove('error');
+    }
+  });  
 })
