@@ -181,6 +181,9 @@ window.addEventListener("DOMContentLoaded", function(){
   let btn = document.querySelectorAll(".modal-btn");
 
   let cancel = document.querySelector(".close-btn");
+    btn.forEach((b) => {
+    b.addEventListener('click', projectDisplay);
+  });
 
   cancel.addEventListener('click', projectDisplay);
 });
