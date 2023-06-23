@@ -201,3 +201,42 @@ form.addEventListener("submit", (event) => {
 
 // Keep Data
 
+const fullname = document.getElementById('name');
+const comment = document.getElementById('comment');
+
+function keep() {
+  const input = {
+    inputName: fullname.value,
+    inputEmail: email.value,
+    inputComment: comment.value,
+  };
+  localStorage.setItem('input', JSON.stringify(data));
+}
+
+let formObject = JSON.parse(localStorage.getItem('input'));
+if (!formObject) {
+  formObject = {
+    fullname: '',
+    email: '',
+    comment: '',
+  };
+  keep();
+}
+
+fullname.value = formObject.fullname;
+fullname.addEventListener('input', (e) => {
+  formObject.fullname = e.target.value;
+  localStorage.setItem('input', JSON.stringify(formObject));
+});
+
+email.value = formObject.email;
+email.addEventListener('input', (e) => {
+  formObject.email = e.target.value;
+  localStorage.setItem('input', JSON.stringify(formObject));
+});
+
+comment.value = formObject.comment;
+comment.addEventListener('input', (e) => {
+  formObject.comment = e.target.value;
+  localStorage.setItem('input', JSON.stringify(formObject));
+});
