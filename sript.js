@@ -183,7 +183,7 @@ const email = document.getElementById('mail');
 const error = document.getElementById('error');
 
 email.addEventListener('click', () => {
-  if (email === document.activeElement) error.style.display = 'none';
+  email.classList.add("error");
 });
 
 form.addEventListener('submit', (event) => {
@@ -211,7 +211,7 @@ function keep() {
 
 let formObject = JSON.parse(localStorage.getItem('input'));
 
-if (formObject === undefined) {
+if (formObject === undefined || formObject === null) {
   formObject = {
     fullName: '',
     email: '',
