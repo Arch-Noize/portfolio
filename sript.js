@@ -12,6 +12,8 @@ function menu() {
   menu.classList.toggle('menu-display');
 }
 
+console.log("There's me, a friend, and a frog somewhere. Find us :3");
+
 burger.addEventListener('click', menu);
 
 cancel.addEventListener('click', menu);
@@ -108,6 +110,8 @@ const modalMenu = [
     imgCancel: './Images/cancel.png',
   },
 ];
+
+console.log('Oop, you found me!');
 
 function popup() {
   let displayWork = modalMenu.map((item) => `<div class="modal-container">
