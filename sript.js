@@ -198,6 +198,7 @@ form.addEventListener("submit", (event) => {
     email.classList.add('error-shadow');
     error.style.display = "block";
   }
+
 });
 
 // Keep Data
