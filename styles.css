@@ -594,8 +594,8 @@ textarea {
   margin-top: 31px;
 }
 
-#error {
-  display: hidden;
+.error {
+  display: none;
   margin-bottom: 0.8em;
   margin-top: -1.2em;
   font-style: italic;
