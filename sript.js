@@ -216,17 +216,6 @@ function keep() {
 
 let formObject = JSON.parse(localStorage.getItem('input'));
 
-console.log(formObject);
-
-if (formObject === undefined) {
-  formObject = {
-    fullName: '',
-    email: '',
-    comment: '',
-  };
-  keep();
-}
-
 fullName.value = formObject.fullName;
 fullName.addEventListener('input', (event) => {
   formObject.fullName = event.target.value;
