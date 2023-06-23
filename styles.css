@@ -591,6 +591,17 @@ textarea {
   margin-top: 31px;
 }
 
+#error {
+  display: hidden;
+  margin-bottom: 0.8em;
+  margin-top: -1.2em;
+  font-style: italic;
+}
+
+.error-shadow {
+  box-shadow: 1px 6px 8px #c71a1a78;
+}
+
 @media (min-width: 768px) {
   .head,
   .text,

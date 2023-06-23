@@ -169,7 +169,6 @@ window.addEventListener("DOMContentLoaded", popup);
 
 window.addEventListener("DOMContentLoaded", function(){
   let btn = document.querySelectorAll(".modal-btn");
-
   btn.forEach((b) => {
     b.addEventListener('click', projectDisplay);
   });
@@ -177,4 +176,25 @@ window.addEventListener("DOMContentLoaded", function(){
   let cancel = document.querySelector(".close-btn");
 
   cancel.addEventListener('click', projectDisplay);
+});
+
+// Form Validation
+
+const form = document.getElementById('connect');
+
+const email = document.getElementById('mail');
+
+const error = document.getElementById('error');
+
+email.addEventListener("click", function () {
+  if (email === document.activeElement) error.style.display = "none";
+});
+
+form.addEventListener("submit", (event) => {
+  const regexMail = /[A-Z]/;
+  if (regexMail.test(email.value)) {
+    event.preventDefault();
+    email.classList.add('error-shadow');
+    error.style.display = "block";
+  }
 });
