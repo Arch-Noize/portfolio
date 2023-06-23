@@ -169,6 +169,7 @@ window.addEventListener("DOMContentLoaded", popup);
 
 window.addEventListener("DOMContentLoaded", function(){
   let btn = document.querySelectorAll(".modal-btn");
+
   btn.forEach((b) => {
     b.addEventListener('click', projectDisplay);
   });
