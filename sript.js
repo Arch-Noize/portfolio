@@ -2,6 +2,10 @@
 
 const burger = document.querySelector(".burger");
 
+const cancel = document.querySelector(".cancel");
+
+const items = document.querySelectorAll(".menu-item");
+
 function menu() {
   const menu = document.querySelector(".menu");
 
