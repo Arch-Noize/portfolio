@@ -183,7 +183,7 @@ const email = document.getElementById('mail');
 const error = document.getElementById('error');
 
 email.addEventListener('click', () => {
-  email.classList.add("error");
+  email.classList.add('error');
 });
 
 form.addEventListener('submit', (event) => {
