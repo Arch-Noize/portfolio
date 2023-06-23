@@ -202,42 +202,45 @@ form.addEventListener("submit", (event) => {
 
 // Keep Data
 
-const fullname = document.getElementById('name');
+const fullName = document.getElementById('name');
 const comment = document.getElementById('comment');
 
 function keep() {
   const input = {
-    inputName: fullname.value,
+    inputName: fullName.value,
     inputEmail: email.value,
     inputComment: comment.value,
   };
-  localStorage.setItem('input', JSON.stringify(data));
+  localStorage.setItem('input', JSON.stringify(input));
 }
 
 let formObject = JSON.parse(localStorage.getItem('input'));
-if (!formObject) {
+
+console.log(formObject);
+
+if (formObject === undefined) {
   formObject = {
-    fullname: '',
+    fullName: '',
     email: '',
     comment: '',
   };
   keep();
 }
 
-fullname.value = formObject.fullname;
-fullname.addEventListener('input', (e) => {
-  formObject.fullname = e.target.value;
+fullName.value = formObject.fullName;
+fullName.addEventListener('input', (event) => {
+  formObject.fullName = event.target.value;
   localStorage.setItem('input', JSON.stringify(formObject));
 });
 
 email.value = formObject.email;
-email.addEventListener('input', (e) => {
-  formObject.email = e.target.value;
+email.addEventListener('input', (event) => {
+  formObject.email = event.target.value;
   localStorage.setItem('input', JSON.stringify(formObject));
 });
 
 comment.value = formObject.comment;
-comment.addEventListener('input', (e) => {
-  formObject.comment = e.target.value;
+comment.addEventListener('input', (event) => {
+  formObject.comment = event.target.value;
   localStorage.setItem('input', JSON.stringify(formObject));
 });
