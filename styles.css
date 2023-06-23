@@ -290,6 +290,8 @@ a {
   place-items: center;
   display: none;
   background-image: url("https://cdn.wallpapersafari.com/98/96/k57HKA.jpg");
+  background-position: cover;
+  background-position-y: 90%;
 }
 
 .open-pop {
