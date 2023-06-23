@@ -599,7 +599,7 @@ textarea {
 }
 
 .error-shadow {
-  box-shadow: 0px 6px 8px #c71a1a78;
+  box-shadow: 1px 6px 8px #c71a1a78;
 }
 
 @media (min-width: 768px) {
