@@ -221,19 +221,19 @@ if (formObject === undefined) {
 }
 
 fullName.value = formObject.fullName;
-fullName.addEventListener('input', (event) => {
+fullName.addEventListener('change', (event) => {
   formObject.fullName = event.target.value;
   localStorage.setItem('input', JSON.stringify(formObject));
 });
 
 email.value = formObject.email;
-email.addEventListener('input', (event) => {
+email.addEventListener('change', (event) => {
   formObject.email = event.target.value;
   localStorage.setItem('input', JSON.stringify(formObject));
 });
 
 comment.value = formObject.comment;
-comment.addEventListener('input', (event) => {
+comment.addEventListener('change', (event) => {
   formObject.comment = event.target.value;
   localStorage.setItem('input', JSON.stringify(formObject));
 });
