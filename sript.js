@@ -12,8 +12,6 @@ function menu() {
   menu.classList.toggle('menu-display');
 }
 
-console.log("There's me, a friend, and a frog somewhere. Find us :3");
-
 burger.addEventListener('click', menu);
 
 cancel.addEventListener('click', menu);
@@ -111,8 +109,6 @@ const modalMenu = [
   },
 ];
 
-console.log('Oop, you found me!');
-
 function popup() {
   let displayWork = modalMenu.map((item) => `<div class="modal-container">
               <div class="modal-item">
@@ -168,6 +164,7 @@ window.addEventListener('DOMContentLoaded', popup);
 
 window.addEventListener('DOMContentLoaded', () => {
   const btn = document.querySelectorAll('.modal-btn');
+
   btn.forEach((b) => {
     b.addEventListener('click', projectDisplay);
   });
@@ -186,7 +183,7 @@ const email = document.getElementById('mail');
 const error = document.getElementById('error');
 
 email.addEventListener('click', () => {
-  if (email === document.activeElement) error.style.display = 'none';
+  email.classList.add('error');
 });
 
 form.addEventListener('submit', (event) => {
@@ -196,4 +193,47 @@ form.addEventListener('submit', (event) => {
     email.classList.add('error-shadow');
     error.style.display = 'block';
   }
+});
+
+// Keep Data
+
+const fullName = document.getElementById('name');
+const comment = document.getElementById('comment');
+
+function keep() {
+  const input = {
+    inputName: fullName.value,
+    inputEmail: email.value,
+    inputComment: comment.value,
+  };
+  localStorage.setItem('input', JSON.stringify(input));
+}
+
+let formObject = JSON.parse(localStorage.getItem('input'));
+
+if (formObject === undefined || formObject === null) {
+  formObject = {
+    fullName: '',
+    email: '',
+    comment: '',
+  };
+  keep();
+}
+
+fullName.value = formObject.fullName;
+fullName.addEventListener('change', (event) => {
+  formObject.fullName = event.target.value;
+  localStorage.setItem('input', JSON.stringify(formObject));
+});
+
+email.value = formObject.email;
+email.addEventListener('change', (event) => {
+  formObject.email = event.target.value;
+  localStorage.setItem('input', JSON.stringify(formObject));
+});
+
+comment.value = formObject.comment;
+comment.addEventListener('change', (event) => {
+  formObject.comment = event.target.value;
+  localStorage.setItem('input', JSON.stringify(formObject));
 });
