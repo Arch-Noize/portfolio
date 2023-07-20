@@ -101,12 +101,12 @@ const projPop = document.querySelector('.project-pop');
 const modalMenu = [
   {
     id: 1,
-    name: 'Keeping track of hundreds of components',
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
-    image: './Images/project.png',
+    name: 'Rawayana Capstone Proyect',
+    desc: "Complete website made out of HTML, CSS, and JavaScript showcasing a local concert. Filled with styles, responsive design, and interactions.",
+    image: './Images/rawayana.png',
     tech: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    live: 'https://arch-noize.github.io/portfolio-microverse/',
-    source: 'https://github.com/Arch-Noize/portfolio-microverse',
+    live: 'https://arch-noize.github.io/capstone-portfolio/about.html',
+    source: 'https://github.com/Arch-Noize/capstone-portfolio',
     imgCancel: './Images/cancel.png',
   },
 ];
