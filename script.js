@@ -26,41 +26,40 @@ items.forEach((menuItem) => {
 
 const story = [
   {
-    id: 1,
-    name: 'Multi-Post Stories Gain+Glory',
-    tech: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    id: 1,name: 'Page-To-Page Library',
+    tech: ['Ruby on Rails', 'React/Redux', 'Rails API'],
     button: 'See Project',
   },
   {
     id: 2,
-    name: 'Multi-Post Stories Gain+Glory',
-    tech: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    name: 'D&D Monster Stats',
+    tech: ['React/Redux', 'Bootstrap CSS', 'HTML', 'RESTful API'],
     button: 'See Project',
   },
   {
     id: 3,
-    name: 'Multi-Post Stories Gain+Glory',
-    tech: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    name: 'Rails Budget App',
+    tech: ['Ruby', 'Ruby on Rails', 'Tailwind CSS', 'HTML'],
     button: 'See Project',
   },
   {
     id: 4,
-    name: 'Multi-Post Stories Gain+Glory',
-    tech: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    name: 'Pokédex',
+    tech: ['React', 'CSS', 'JavaScript', 'HTML'],
     button: 'See Project',
   },
   {
     id: 5,
-    name: 'Multi-Post Stories Gain+Glory',
-    tech: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    name: 'Spacex Launches',
+    tech: ['React/Redux', 'Bootstrap CSS', 'HTML'],
     button: 'See Project',
   },
   {
-    id: 6,
-    name: 'Multi-Post Stories Gain+Glory',
-    tech: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    id: 5,
+    name: 'Rawayana Concert Tour',
+    tech: ['HTML', 'CSS', 'Javascript'],
     button: 'See Project',
-  },
+  }
 ];
 
 const recent = document.querySelector('.works');
@@ -138,8 +137,6 @@ function popup() {
 
               <div class="modal-item">
                   <p>
-                      ${item.desc}
-                      <br><br><br>
                       ${item.desc}
                   </p>
               </div>

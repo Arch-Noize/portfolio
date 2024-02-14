@@ -202,6 +202,7 @@ a {
   border: 2px solid #c1c7d0;
   border-radius: 8px;
   margin-top: 24px;
+  width: 40vh;
 }
 
 .grid {
@@ -221,6 +222,7 @@ a {
   padding: 16px;
   color: #3a4a42;
   font-size: 1.7em;
+  margin: 32px 0px -16px 0px;
 }
 
 .grid-item button {
@@ -235,7 +237,6 @@ a {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 16px;
 }
 
 .modal-item li {
@@ -304,7 +305,7 @@ a {
   width: 85em;
   height: 15em;
   left: 0;
-  background: no-repeat top left / cover url("./Images/works.png");
+  background: no-repeat top left / cover;
   border-radius: 8px;
 }
 
@@ -314,7 +315,6 @@ a {
   z-index: 1;
   right: 10%;
   margin-top: 12px;
-  filter: brightness(90);
 }
 
 .modal-container {
@@ -327,7 +327,7 @@ a {
   margin-top: 10px;
   grid-template-columns: minmax(100px, auto);
   gap: 10px;
-  grid-auto-rows: 45% 10% 45%;
+  grid-auto-rows: 45% 10% 5% 40%;
   padding: 20px;
 }
 
