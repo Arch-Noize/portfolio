@@ -327,7 +327,7 @@ a {
   margin-top: 10px;
   grid-template-columns: minmax(100px, auto);
   gap: 10px;
-  grid-auto-rows: 45% 10% 5% 40%;
+  grid-auto-rows: 45% 10% 7.5% 10%;
   padding: 20px;
 }
 
@@ -377,7 +377,6 @@ a {
 
 .story-btn {
   width: 45%;
-  height: 80%;
   align-items: center;
 }
 

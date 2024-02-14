@@ -110,8 +110,6 @@ const modalMenu = [
   },
 ];
 
-console.log('Oop, you found me!');
-
 function popup() {
   let displayWork = modalMenu.map((item) => `<div class="modal-container">
               <div class="modal-item">
