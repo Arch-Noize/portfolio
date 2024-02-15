@@ -143,8 +143,6 @@ a {
   display: flex;
   flex-direction: column;
   width: 120%;
-  height: auto;
-  margin-top: 10px;
 }
 
 .text {
@@ -536,7 +534,7 @@ a {
 .touch {
   display: flex;
   flex-direction: column;
-  width: 120%;
+  width: 170%;
 }
 
 .touch h2 {
@@ -749,6 +747,10 @@ textarea {
       no-repeat 0% 75% / 12.5% url("./Images/contact-desk1.png"),
       no-repeat 20% 70% / 6% url("./Images/contact-desk2.png"),
       no-repeat 100% 60% / 15%  url("./Images/contact-desk3.png");
+  }
+
+  .touch {
+    width: 80%;
   }
 
   .form-container > .text {
