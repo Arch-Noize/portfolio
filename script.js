@@ -28,46 +28,46 @@ const story = [
   {
     id: 1,name: 'Page-To-Page Library',
     tech: ['Ruby on Rails', 'React/Redux', 'Rails API'],
-    desc: "",
+    desc: "This website was done collaboratively from the ground up. Using React/Redux for the frontend and our own Rails API for the backend. Please, look into my team as well!",
     image: './Images/rawayana.png',
-    live: 'https://arch-noize.github.io/capstone-portfolio/about.html',
-    source: 'https://github.com/Arch-Noize/capstone-portfolio',
+    live: 'https://page-to-page.onrender.com',
+    source: 'https://github.com/leloufadel/Page-To-page-Library-Frontend',
   },
   {
     id: 2,
     name: 'D&D Monster Stats',
     tech: ['React/Redux', 'Bootstrap CSS', 'HTML', 'RESTful API'],
-    desc: "",
+    desc: "This project is a mobile, single page application that displays monsters from the popular TTRPG Dungeons and Dragons, 5th Edition. Using Open5eAPI (https://open5e.com/api-docs), React, React Bootstrap, and Redux.",
     image: './Images/rawayana.png',
-    live: 'https://arch-noize.github.io/capstone-portfolio/about.html',
-    source: 'https://github.com/Arch-Noize/capstone-portfolio',
+    live: 'https://dnd-5e-monsters.onrender.com/',
+    source: 'https://github.com/Arch-Noize/react-capstone',
   },
   {
     id: 3,
     name: 'Rails Budget App',
     tech: ['Ruby', 'Ruby on Rails', 'Tailwind CSS', 'HTML'],
-    desc: "",
+    desc: "Built with Ruby on Rails, and with a mobile focused design, this project can help you organize your expenses a little and make sure your savings are intact!",
     image: './Images/rawayana.png',
-    live: 'https://arch-noize.github.io/capstone-portfolio/about.html',
-    source: 'https://github.com/Arch-Noize/capstone-portfolio',
+    live: '',
+    source: 'https://github.com/Arch-Noize/rails-budget',
   },
   {
     id: 4,
     name: 'Pokédex',
-    tech: ['React', 'CSS', 'JavaScript', 'HTML'],
-    desc: "",
+    tech: ['JavaScript', 'HTML', 'CSS'],
+    desc: "This project is a single-page webapp showing a bunch of cute Pokemons using PokeAPI, all with added Involvement interactions of adding likes, comments and reservations.",
     image: './Images/rawayana.png',
-    live: 'https://arch-noize.github.io/capstone-portfolio/about.html',
-    source: 'https://github.com/Arch-Noize/capstone-portfolio',
+    live: '',
+    source: 'https://github.com/Arch-Noize/javascript-capstone',
   },
   {
     id: 5,
     name: 'Spacex Launches',
     tech: ['React/Redux', 'Bootstrap CSS', 'HTML'],
-    desc: "Complete website made out of HTML, CSS, and JavaScript showcasing a local concert. Filled with styles, responsive design, and interactions.",
+    desc: "This project is a display of space rockets, missions and 'dragons'! All fetched from API.",
     image: './Images/rawayana.png',
-    live: 'https://arch-noize.github.io/capstone-portfolio/about.html',
-    source: 'https://github.com/Arch-Noize/capstone-portfolio',
+    live: '',
+    source: 'https://github.com/Arch-Noize/react-group-project',
   },
   {
     id: 5,
@@ -118,8 +118,7 @@ function popup(item) {
                 <figure class="close-btn">
                   <img src="./Images/cancel.png" alt="">
                 </figure>
-                <div class="bg-img">
-                </div>
+                <img src="./Images/Snapshoot.png" class="bg-img">
               </div>
 
               <div class="modal-item">
