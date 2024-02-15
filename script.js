@@ -149,6 +149,12 @@ function popup(item) {
               </div>
           </div>`;
   projPop.innerHTML = displayWork;
+
+  const cancel = document.querySelector('.close-btn');
+  cancel.addEventListener('click', () => {
+    projPop.innerHTML = '';
+    projPop.classList.toggle('open-pop');
+  });
 }
 
 function projectDisplay(id) {
@@ -165,13 +171,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   btn.forEach((b) => {
     b.addEventListener('click', () => projectDisplay(parseInt(b.id)));
-  });
-
-  const cancel = document.querySelector('.close-btn');
-
-  cancel.addEventListener('click', () => {
-    projectDisplay();
-    console.log('clicked');
   });
 });
 
