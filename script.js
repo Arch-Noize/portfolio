@@ -28,37 +28,55 @@ const story = [
   {
     id: 1,name: 'Page-To-Page Library',
     tech: ['Ruby on Rails', 'React/Redux', 'Rails API'],
-    button: 'See Project',
+    desc: "",
+    image: './Images/rawayana.png',
+    live: 'https://arch-noize.github.io/capstone-portfolio/about.html',
+    source: 'https://github.com/Arch-Noize/capstone-portfolio',
   },
   {
     id: 2,
     name: 'D&D Monster Stats',
     tech: ['React/Redux', 'Bootstrap CSS', 'HTML', 'RESTful API'],
-    button: 'See Project',
+    desc: "",
+    image: './Images/rawayana.png',
+    live: 'https://arch-noize.github.io/capstone-portfolio/about.html',
+    source: 'https://github.com/Arch-Noize/capstone-portfolio',
   },
   {
     id: 3,
     name: 'Rails Budget App',
     tech: ['Ruby', 'Ruby on Rails', 'Tailwind CSS', 'HTML'],
-    button: 'See Project',
+    desc: "",
+    image: './Images/rawayana.png',
+    live: 'https://arch-noize.github.io/capstone-portfolio/about.html',
+    source: 'https://github.com/Arch-Noize/capstone-portfolio',
   },
   {
     id: 4,
     name: 'Pokédex',
     tech: ['React', 'CSS', 'JavaScript', 'HTML'],
-    button: 'See Project',
+    desc: "",
+    image: './Images/rawayana.png',
+    live: 'https://arch-noize.github.io/capstone-portfolio/about.html',
+    source: 'https://github.com/Arch-Noize/capstone-portfolio',
   },
   {
     id: 5,
     name: 'Spacex Launches',
     tech: ['React/Redux', 'Bootstrap CSS', 'HTML'],
-    button: 'See Project',
+    desc: "Complete website made out of HTML, CSS, and JavaScript showcasing a local concert. Filled with styles, responsive design, and interactions.",
+    image: './Images/rawayana.png',
+    live: 'https://arch-noize.github.io/capstone-portfolio/about.html',
+    source: 'https://github.com/Arch-Noize/capstone-portfolio',
   },
   {
     id: 5,
     name: 'Rawayana Concert Tour',
     tech: ['HTML', 'CSS', 'Javascript'],
-    button: 'See Project',
+    desc: "Complete website made out of HTML, CSS, and JavaScript showcasing a local concert. Filled with styles, responsive design, and interactions.",
+    image: './Images/rawayana.png',
+    live: 'https://arch-noize.github.io/capstone-portfolio/about.html',
+    source: 'https://github.com/Arch-Noize/capstone-portfolio',
   }
 ];
 
@@ -73,15 +91,12 @@ function stories() {
                   </div>
                   <div class="grid-item">
                     <ul>
-                      <li> ${item.tech[0]}</li>
-                      <li> ${item.tech[1]} </li>
-                      <li> ${item.tech[2]} </li>
-                      <li> ${item.tech[3]} </li>
+                      ${item.tech.map(tech => `<li>${tech}</li>`).join('')}
                     </ul>
                   </div>
                   <div class="grid-item">
-                    <button class="btn modal-btn">
-                      ${item.button}
+                    <button class="btn modal-btn" id="${item.id}">
+                      See Project
                     </button>
                   </div>
                 </div>
@@ -97,24 +112,11 @@ window.addEventListener('DOMContentLoaded', stories);
 
 const projPop = document.querySelector('.project-pop');
 
-const modalMenu = [
-  {
-    id: 1,
-    name: 'Rawayana Capstone Proyect',
-    desc: "Complete website made out of HTML, CSS, and JavaScript showcasing a local concert. Filled with styles, responsive design, and interactions.",
-    image: './Images/rawayana.png',
-    tech: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    live: 'https://arch-noize.github.io/capstone-portfolio/about.html',
-    source: 'https://github.com/Arch-Noize/capstone-portfolio',
-    imgCancel: './Images/cancel.png',
-  },
-];
-
-function popup() {
-  let displayWork = modalMenu.map((item) => `<div class="modal-container">
+function popup(item) {
+  let displayWork = `<div class="modal-container">
               <div class="modal-item">
                 <figure class="close-btn">
-                  <img src="${item.imgCancel}" alt="">
+                  <img src="./Images/cancel.png" alt="">
                 </figure>
                 <div class="bg-img">
                 </div>
@@ -126,10 +128,7 @@ function popup() {
 
               <div class="modal-item">
                   <ul>
-                      <li> ${item.tech[0]}</li>
-                      <li> ${item.tech[1]} </li>
-                      <li> ${item.tech[2]} </li>
-                      <li> ${item.tech[3]} </li>
+                    ${item.tech.map(tech => `<li>${tech}</li>`).join('')}
                   </ul>
               </div>
 
@@ -148,29 +147,32 @@ function popup() {
                       <a href="${item.source}"> See Source </a>
                   </button>
               </div>
-          </div>`);
-  displayWork = displayWork.join('');
+          </div>`;
   projPop.innerHTML = displayWork;
 }
 
-function projectDisplay() {
+function projectDisplay(id) {
   const modal = document.querySelector('.project-pop');
-
-  modal.classList.toggle('open-pop');
+  const storyItem = story.find(item => item.id === id);
+  if (storyItem) {
+    popup(storyItem);
+    modal.classList.toggle('open-pop');
+  }
 }
-
-window.addEventListener('DOMContentLoaded', popup);
 
 window.addEventListener('DOMContentLoaded', () => {
   const btn = document.querySelectorAll('.modal-btn');
 
   btn.forEach((b) => {
-    b.addEventListener('click', projectDisplay);
+    b.addEventListener('click', () => projectDisplay(parseInt(b.id)));
   });
 
   const cancel = document.querySelector('.close-btn');
 
-  cancel.addEventListener('click', projectDisplay);
+  cancel.addEventListener('click', () => {
+    projectDisplay();
+    console.log('clicked');
+  });
 });
 
 // Form Validation
