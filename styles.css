@@ -300,8 +300,9 @@ a {
 }
 
 .bg-img {
-  width: 85em;
-  height: 15em;
+  height: 250px; 
+  object-fit: contain;
+  width: 100%;
   left: 0;
   background: no-repeat top left / cover;
   border-radius: 8px;
@@ -309,10 +310,14 @@ a {
 
 .close-btn {
   position: absolute;
+  top: 10px;
+  right: 10px;
   align-self: flex-end center;
-  z-index: 1;
-  right: 10%;
-  margin-top: 12px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #ebecf0;
+  z-index: 2;
+  filter: none;
 }
 
 .modal-container {
@@ -333,6 +338,7 @@ a {
   width: 100%;
   display: flex;
   gap: 18px;
+  position: relative;
 }
 
 .modal-container p {
@@ -394,14 +400,14 @@ a {
 }
 
 #live {
-  background-image: url("./Images/live.png");
+  background-image: url("./Images/icons/live.png");
   background-size: 17%;
   background-repeat: no-repeat;
   background-position: 85% 50%;
 }
 
 #source {
-  background-image: url("./Images/source.png");
+  background-image: url("./Images/icons/source.png");
   background-size: 20%;
   background-repeat: no-repeat;
   background-position: 90% 50%;
@@ -716,17 +722,6 @@ textarea {
 
   .buttons {
     width: 100%;
-  }
-
-  .close-btn {
-    align-self: flex-end center;
-    padding: 8px;
-    border-radius: 8px;
-    background-color: #ebecf0;
-    z-index: 1;
-    margin-top: 12px;
-    right: 15.3%;
-    filter: none;
   }
 
   #live {

@@ -29,7 +29,7 @@ const story = [
     id: 1,name: 'Page-To-Page Library',
     tech: ['Ruby on Rails', 'React/Redux', 'Rails API'],
     desc: "This website was done collaboratively from the ground up. Using React/Redux for the frontend and our own Rails API for the backend. Please, look into my team as well!",
-    image: './Images/rawayana.png',
+    image: './Images/portfolio/Library.png',
     live: 'https://page-to-page.onrender.com',
     source: 'https://github.com/leloufadel/Page-To-page-Library-Frontend',
   },
@@ -38,7 +38,7 @@ const story = [
     name: 'D&D Monster Stats',
     tech: ['React/Redux', 'Bootstrap CSS', 'HTML', 'RESTful API'],
     desc: "This project is a mobile, single page application that displays monsters from the popular TTRPG Dungeons and Dragons, 5th Edition. Using Open5eAPI (https://open5e.com/api-docs), React, React Bootstrap, and Redux.",
-    image: './Images/rawayana.png',
+    image: './Images/portfolio/Monsters.png',
     live: 'https://dnd-5e-monsters.onrender.com/',
     source: 'https://github.com/Arch-Noize/react-capstone',
   },
@@ -47,7 +47,7 @@ const story = [
     name: 'Rails Budget App',
     tech: ['Ruby', 'Ruby on Rails', 'Tailwind CSS', 'HTML'],
     desc: "Built with Ruby on Rails, and with a mobile focused design, this project can help you organize your expenses a little and make sure your savings are intact!",
-    image: './Images/rawayana.png',
+    image: './Images/portfolio/Budget.png',
     live: 'javascript: void(0)',
     source: 'https://github.com/Arch-Noize/rails-budget',
   },
@@ -56,7 +56,7 @@ const story = [
     name: 'Pokédex',
     tech: ['JavaScript', 'HTML', 'CSS'],
     desc: "This project is a single-page webapp showing a bunch of cute Pokemons using PokeAPI, all with added Involvement interactions of adding likes, comments and reservations.",
-    image: './Images/rawayana.png',
+    image: './Images/portfolio/Pokedex.png',
     live: 'javascript: void(0)',
     source: 'https://github.com/Arch-Noize/javascript-capstone',
   },
@@ -65,16 +65,16 @@ const story = [
     name: 'Spacex Launches',
     tech: ['React/Redux', 'Bootstrap CSS', 'HTML'],
     desc: "This project is a display of space rockets, missions and 'dragons'! All fetched from API.",
-    image: './Images/rawayana.png',
+    image: './Images/portfolio/Space.png',
     live: 'javascript: void(0)',
     source: 'https://github.com/Arch-Noize/react-group-project',
   },
   {
-    id: 5,
+    id: 6,
     name: 'Rawayana Concert Tour',
     tech: ['HTML', 'CSS', 'Javascript'],
     desc: "Complete website made out of HTML, CSS, and JavaScript showcasing a local concert. Filled with styles, responsive design, and interactions.",
-    image: './Images/rawayana.png',
+    image: './Images/portfolio/Rawayana.png',
     live: 'https://arch-noize.github.io/capstone-portfolio/about.html',
     source: 'https://github.com/Arch-Noize/capstone-portfolio',
   }
@@ -118,7 +118,7 @@ function popup(item) {
                 <figure class="close-btn">
                   <img src="./Images/cancel.png" alt="">
                 </figure>
-                <img src="./Images/Snapshoot.png" class="bg-img">
+                <img src="${item.image}" class="bg-img">
               </div>
 
               <div class="modal-item">
