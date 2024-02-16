@@ -142,14 +142,12 @@ a {
 .head {
   display: flex;
   flex-direction: column;
-  width: 120%;
-  height: auto;
-  margin-top: 10px;
+  width: 100%;
 }
 
 .text {
   display: flex;
-  width: 120%;
+  width: 100%;
   flex-direction: column;
   margin-top: 15px;
   padding: 17px;
@@ -202,6 +200,7 @@ a {
   border: 2px solid #c1c7d0;
   border-radius: 8px;
   margin-top: 24px;
+  width: 40vh;
 }
 
 .grid {
@@ -221,6 +220,7 @@ a {
   padding: 16px;
   color: #3a4a42;
   font-size: 1.7em;
+  margin: 32px 0 -16px 0;
 }
 
 .grid-item button {
@@ -235,7 +235,6 @@ a {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 16px;
 }
 
 .modal-item li {
@@ -301,20 +300,24 @@ a {
 }
 
 .bg-img {
-  width: 85em;
-  height: 15em;
+  height: 250px;
+  object-fit: contain;
+  width: 100%;
   left: 0;
-  background: no-repeat top left / cover url("./Images/works.png");
+  background: no-repeat top left / cover;
   border-radius: 8px;
 }
 
 .close-btn {
   position: absolute;
+  top: 10px;
+  right: 10px;
   align-self: flex-end center;
-  z-index: 1;
-  right: 10%;
-  margin-top: 12px;
-  filter: brightness(90);
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #ebecf0;
+  z-index: 2;
+  filter: none;
 }
 
 .modal-container {
@@ -327,7 +330,7 @@ a {
   margin-top: 10px;
   grid-template-columns: minmax(100px, auto);
   gap: 10px;
-  grid-auto-rows: 45% 10% 45%;
+  grid-auto-rows: 45% 10% 7.5% 10%;
   padding: 20px;
 }
 
@@ -335,6 +338,7 @@ a {
   width: 100%;
   display: flex;
   gap: 18px;
+  position: relative;
 }
 
 .modal-container p {
@@ -377,19 +381,33 @@ a {
 
 .story-btn {
   width: 45%;
-  height: 80%;
   align-items: center;
 }
 
+.story-btn.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.btn.disabled:hover {
+  scale: 1;
+  box-shadow: none;
+  animation: none;
+}
+
+.disabled > a {
+  pointer-events: none;
+}
+
 #live {
-  background-image: url("./Images/live.png");
+  background-image: url("./Images/icons/live.png");
   background-size: 17%;
   background-repeat: no-repeat;
   background-position: 85% 50%;
 }
 
 #source {
-  background-image: url("./Images/source.png");
+  background-image: url("./Images/icons/source.png");
   background-size: 20%;
   background-repeat: no-repeat;
   background-position: 90% 50%;
@@ -537,7 +555,7 @@ a {
 .touch {
   display: flex;
   flex-direction: column;
-  width: 120%;
+  width: 80%;
 }
 
 .touch h2 {
@@ -547,7 +565,7 @@ a {
 
 .connect {
   display: flex;
-  width: 120%;
+  width: 100%;
   height: 80%;
   flex-wrap: wrap;
   justify-content: center;
@@ -565,7 +583,8 @@ label {
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+textarea {
   display: flex;
   width: 100%;
   border: 1px solid #d0d9d4;
@@ -575,7 +594,8 @@ input[type="email"] {
   padding: 5px;
 }
 
-input::placeholder {
+input,
+textarea::placeholder {
   font-style: italic;
 }
 
@@ -607,12 +627,22 @@ textarea {
 
 @media (min-width: 768px) {
   .head,
-  .text,
-  .text-a,
   .about,
-  .touch,
-  .connect {
+  .touch {
     width: 40%;
+  }
+
+  .head {
+    margin-top: 2em;
+  }
+
+  .text {
+    margin-top: 10em;
+  }
+
+  .text-a {
+    margin-top: 1em;
+    width: 70%;
   }
 
   .bar-container {
@@ -648,10 +678,6 @@ textarea {
     padding: 10px;
   }
 
-  .head {
-    margin-top: 186px;
-  }
-
   .me-container {
     flex-direction: row;
     gap: 40px;
@@ -678,16 +704,15 @@ textarea {
   .project-pop {
     width: 100%;
     height: 100%;
-    padding: 10% 9%;
+    padding: 5px;
     background-color: #c1c7d0d1;
   }
 
   .bg-img {
     margin-top: 78px;
     background-size: cover;
-    height: 40em;
+    height: 20em;
     flex-grow: 1;
-    background-image: url("./Images/Snapshoot.png");
   }
 
   .open-pop {
@@ -697,18 +722,7 @@ textarea {
   }
 
   .buttons {
-    width: 60%;
-  }
-
-  .close-btn {
-    align-self: flex-end center;
-    padding: 8px;
-    border-radius: 8px;
-    background-color: #ebecf0;
-    z-index: 1;
-    margin-top: 12px;
-    right: 15.3%;
-    filter: none;
+    width: 100%;
   }
 
   #live {
@@ -753,6 +767,15 @@ textarea {
       no-repeat 100% 60% / 15%  url("./Images/contact-desk3.png");
   }
 
+  .connect {
+    width: 80%;
+    margin-top: -10px;
+  }
+
+  .touch {
+    width: 80%;
+  }
+
   .form-container > .text {
     display: none;
   }
@@ -770,5 +793,15 @@ textarea {
 
   .foot > .socials {
     margin-top: 5px;
+  }
+}
+
+@media (min-width: 900px) {
+  .head {
+    margin-top: 5em;
+  }
+
+  .text {
+    margin-top: 12em;
   }
 }
