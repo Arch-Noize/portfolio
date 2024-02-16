@@ -48,7 +48,7 @@ const story = [
     tech: ['Ruby', 'Ruby on Rails', 'Tailwind CSS', 'HTML'],
     desc: "Built with Ruby on Rails, and with a mobile focused design, this project can help you organize your expenses a little and make sure your savings are intact!",
     image: './Images/rawayana.png',
-    live: '',
+    live: 'javascript: void(0)',
     source: 'https://github.com/Arch-Noize/rails-budget',
   },
   {
@@ -57,7 +57,7 @@ const story = [
     tech: ['JavaScript', 'HTML', 'CSS'],
     desc: "This project is a single-page webapp showing a bunch of cute Pokemons using PokeAPI, all with added Involvement interactions of adding likes, comments and reservations.",
     image: './Images/rawayana.png',
-    live: '',
+    live: 'javascript: void(0)',
     source: 'https://github.com/Arch-Noize/javascript-capstone',
   },
   {
@@ -66,7 +66,7 @@ const story = [
     tech: ['React/Redux', 'Bootstrap CSS', 'HTML'],
     desc: "This project is a display of space rockets, missions and 'dragons'! All fetched from API.",
     image: './Images/rawayana.png',
-    live: '',
+    live: 'javascript: void(0)',
     source: 'https://github.com/Arch-Noize/react-group-project',
   },
   {
@@ -138,10 +138,10 @@ function popup(item) {
               </div>
 
               <div class="modal-item buttons">
+                
                   <button class="btn story-btn" id="live">
-                      <a href="${item.live}"> See Live </a>
+                    <a href="${item.live}"> See Live </a>
                   </button>
-
                   <button class="btn story-btn" id="source">
                       <a href="${item.source}"> See Source </a>
                   </button>
@@ -154,6 +154,10 @@ function popup(item) {
     projPop.innerHTML = '';
     projPop.classList.toggle('open-pop');
   });
+
+  if (!item.live || item.live === 'javascript: void(0)') {
+    document.getElementById('live').classList.add('disabled');
+  }
 }
 
 function projectDisplay(id) {
