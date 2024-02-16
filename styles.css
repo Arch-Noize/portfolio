@@ -220,7 +220,7 @@ a {
   padding: 16px;
   color: #3a4a42;
   font-size: 1.7em;
-  margin: 32px 0px -16px 0px;
+  margin: 32px 0 -16px 0;
 }
 
 .grid-item button {
@@ -300,7 +300,7 @@ a {
 }
 
 .bg-img {
-  height: 250px; 
+  height: 250px;
   object-fit: contain;
   width: 100%;
   left: 0;
@@ -594,7 +594,8 @@ textarea {
   padding: 5px;
 }
 
-input, textarea::placeholder {
+input,
+textarea::placeholder {
   font-style: italic;
 }
 
