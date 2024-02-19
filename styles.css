@@ -285,12 +285,9 @@ a {
   width: 100%;
   height: auto;
   padding: 0 0 100%;
-  background-color: #c1c7d0;
-  place-items: center;
+  background-color: #c1c7d0d1;
+  align-items: center;
   display: none;
-  background-image: url("/Images/rawayana-pc.png");
-  background-position: cover;
-  background-position-y: 90%;
 }
 
 .open-pop {
@@ -300,7 +297,7 @@ a {
 }
 
 .bg-img {
-  height: 250px;
+  height: 300px;
   object-fit: contain;
   width: 100%;
   left: 0;
@@ -322,12 +319,12 @@ a {
 
 .modal-container {
   display: grid;
-  margin: 20px;
+  margin: 10px;
   justify-items: left;
   background-color: #fff;
   width: 90%;
   border-radius: 8px;
-  margin-top: 10px;
+  margin-top: 15%;
   grid-template-columns: minmax(100px, auto);
   gap: 10px;
   grid-auto-rows: 45% 10% 7.5% 10%;
@@ -377,10 +374,11 @@ a {
   align-items: flex-start;
   padding: 8px 12px;
   font-size: 20px;
+  margin-top: 30px;
 }
 
-.story-btn {
-  width: 45%;
+.story-btn > .btn {
+  width: 190px;
   align-items: center;
 }
 
@@ -502,7 +500,7 @@ a {
   background-color: #fff;
   box-shadow: 1px 16px 24px #252f8914;
   border-radius: 50%;
-  background-image: url("./Images/languages.png");
+  background-image: url("./Images/icons/languages.png");
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: 50% 50%;
@@ -517,7 +515,7 @@ a {
   background-color: #fff;
   box-shadow: 1px 16px 24px #252f8914;
   border-radius: 50%;
-  background-image: url("./Images/frameworks.png");
+  background-image: url("./Images/icons/frameworks.png");
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: 50% 50%;
@@ -532,7 +530,7 @@ a {
   background-color: #fff;
   box-shadow: 1px 16px 24px #252f8914;
   border-radius: 50%;
-  background-image: url("./Images/skills.png");
+  background-image: url("./Images/icons/skills.png");
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: 50% 50%;
@@ -646,8 +644,7 @@ textarea {
   }
 
   .bar-container {
-    display: flex;
-    justify-content: center;
+    display: none;
   }
 
   .burger {
@@ -708,21 +705,19 @@ textarea {
     background-color: #c1c7d0d1;
   }
 
-  .bg-img {
-    margin-top: 78px;
-    background-size: cover;
-    height: 20em;
-    flex-grow: 1;
+  .modal-container {
+    margin-top: 10px;
+    height: 90%;
   }
 
-  .open-pop {
-    display: flex;
-    justify-content: center;
-    z-index: 10;
+  .modal-item h2 {
+    margin-top: 30px;
   }
 
   .buttons {
+    justify-content: center;
     width: 100%;
+    gap: 150px;
   }
 
   #live {
@@ -803,5 +798,41 @@ textarea {
 
   .text {
     margin-top: 12em;
+  }
+
+  .modal-container {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    background-size: cover;
+  }
+
+  .head {
+    margin-top: 15em;
+  }
+
+  .text {
+    margin-top: 5em;
+    width: 40%;
+  }
+
+  .modal-container {
+    width: 60%;
+    height: 70%;
+  }
+
+  .buttons {
+    margin-top: 0;
+  }
+
+  .touch {
+    width: 40%;
+  }
+
+  .connect {
+    width: 30%;
   }
 }
