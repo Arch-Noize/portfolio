@@ -137,13 +137,16 @@ function popup(item) {
               </div>
 
               <div class="modal-item buttons">
-                
-                  <button class="btn story-btn" id="live">
-                    <a href="${item.live}"> See Live </a>
+                <a href="${item.live}" target="_blank" rel="noopener noreferrer" class="story-btn"> 
+                  <button class="btn" id="live">
+                    See Live
                   </button>
-                  <button class="btn story-btn" id="source">
-                      <a href="${item.source}"> See Source </a>
+                </a>
+                <a href="${item.source}" target="_blank" rel="noopener noreferrer" class="story-btn">
+                  <button class="btn" id="source">
+                    See Source 
                   </button>
+                </a>
               </div>
           </div>`;
   projPop.innerHTML = displayWork;
