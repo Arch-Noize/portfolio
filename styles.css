@@ -857,6 +857,10 @@ textarea {
     margin-top: 0;
   }
 
+  .text-a {
+    width: 60%;
+  }
+
   .touch {
     width: 40%;
   }
