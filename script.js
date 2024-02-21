@@ -35,7 +35,7 @@ const story = [
   {
     id: 2,
     name: 'D&D Monster Stats',
-    tech: ['React/Redux', 'Bootstrap CSS', 'HTML', 'RESTful API'],
+    tech: ['React/Redux', 'Bootstrap CSS', 'RESTful API'],
     desc: 'This project is a mobile, single page application that displays monsters from the popular TTRPG Dungeons and Dragons, 5th Edition. Using Open5eAPI (https://open5e.com/api-docs), React, React Bootstrap, and Redux.',
     image: './Images/portfolio/Monsters.png',
     live: 'https://dnd-5e-monsters.onrender.com/',
@@ -44,7 +44,7 @@ const story = [
   {
     id: 3,
     name: 'Rails Budget App',
-    tech: ['Ruby', 'Ruby on Rails', 'Tailwind CSS', 'HTML'],
+    tech: ['Ruby', 'Ruby on Rails', 'Tailwind CSS'],
     desc: 'Built with Ruby on Rails, and with a mobile focused design, this project can help you organize your expenses a little and make sure your savings are intact!',
     image: './Images/portfolio/Budget.png',
     live: '',
@@ -137,13 +137,16 @@ function popup(item) {
               </div>
 
               <div class="modal-item buttons">
-                
-                  <button class="btn story-btn" id="live">
-                    <a href="${item.live}"> See Live </a>
+                <a href="${item.live}" target="_blank" rel="noopener noreferrer" class="story-btn"> 
+                  <button class="btn" id="live">
+                    See Live
                   </button>
-                  <button class="btn story-btn" id="source">
-                      <a href="${item.source}"> See Source </a>
+                </a>
+                <a href="${item.source}" target="_blank" rel="noopener noreferrer" class="story-btn">
+                  <button class="btn" id="source">
+                    See Source 
                   </button>
+                </a>
               </div>
           </div>`;
   projPop.innerHTML = displayWork;

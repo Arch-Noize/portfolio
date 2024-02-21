@@ -1,4 +1,7 @@
 /* Universal selectors */
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   padding: 0;
@@ -26,6 +29,10 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.nav {
+  display: none;
 }
 
 .btn {
@@ -104,17 +111,16 @@ a {
   margin-right: 20px;
 }
 
-.container {
+.front {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
   align-items: center;
   padding: 45px;
   background-image: url("./Images/header_illustration.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 55% 0%;
+  margin-top: -0px;
 }
 
 .socials {
@@ -175,13 +181,14 @@ a {
 /* Recent Works section */
 
 .portfolio {
+  scroll-margin-top: 100px;
   width: 100%;
   display: flex;
   justify-content: center;
   padding: 16px;
   font-size: 1.7em;
   margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 /* Story+Post cards */
@@ -285,12 +292,9 @@ a {
   width: 100%;
   height: auto;
   padding: 0 0 100%;
-  background-color: #c1c7d0;
-  place-items: center;
+  background-color: #c1c7d0d1;
+  align-items: center;
   display: none;
-  background-image: url("/Images/rawayana-pc.png");
-  background-position: cover;
-  background-position-y: 90%;
 }
 
 .open-pop {
@@ -300,7 +304,7 @@ a {
 }
 
 .bg-img {
-  height: 250px;
+  height: 300px;
   object-fit: contain;
   width: 100%;
   left: 0;
@@ -322,12 +326,12 @@ a {
 
 .modal-container {
   display: grid;
-  margin: 20px;
+  margin: 10px;
   justify-items: left;
   background-color: #fff;
   width: 90%;
   border-radius: 8px;
-  margin-top: 10px;
+  margin-top: 15%;
   grid-template-columns: minmax(100px, auto);
   gap: 10px;
   grid-auto-rows: 45% 10% 7.5% 10%;
@@ -377,10 +381,11 @@ a {
   align-items: flex-start;
   padding: 8px 12px;
   font-size: 20px;
+  margin-top: 30px;
 }
 
-.story-btn {
-  width: 45%;
+.story-btn > .btn {
+  width: 190px;
   align-items: center;
 }
 
@@ -429,6 +434,7 @@ a {
 }
 
 .about {
+  scroll-margin-top: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -502,7 +508,7 @@ a {
   background-color: #fff;
   box-shadow: 1px 16px 24px #252f8914;
   border-radius: 50%;
-  background-image: url("./Images/languages.png");
+  background-image: url("./Images/icons/languages.png");
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: 50% 50%;
@@ -517,7 +523,7 @@ a {
   background-color: #fff;
   box-shadow: 1px 16px 24px #252f8914;
   border-radius: 50%;
-  background-image: url("./Images/frameworks.png");
+  background-image: url("./Images/icons/frameworks.png");
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: 50% 50%;
@@ -532,7 +538,7 @@ a {
   background-color: #fff;
   box-shadow: 1px 16px 24px #252f8914;
   border-radius: 50%;
-  background-image: url("./Images/skills.png");
+  background-image: url("./Images/icons/skills.png");
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: 50% 50%;
@@ -541,6 +547,7 @@ a {
 /* Form Section */
 
 .form-container {
+  scroll-margin-top: 100px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -629,15 +636,16 @@ textarea {
   .head,
   .about,
   .touch {
-    width: 40%;
+    width: 50%;
   }
 
   .head {
-    margin-top: 2em;
+    margin-top: 3em;
   }
 
   .text {
-    margin-top: 10em;
+    margin-top: -10px;
+   width: 60%;
   }
 
   .text-a {
@@ -646,32 +654,49 @@ textarea {
   }
 
   .bar-container {
-    display: flex;
-    justify-content: center;
+    display: none;
   }
 
   .burger {
     display: none;
   }
 
-  .menu {
+  .nav {
     display: flex;
-    font-weight: 600;
-    font-size: 15px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid #dfe1e6;
+    z-index: 1;
   }
 
-  .menu ul {
+  .nav ul {
+    display: flex;
     flex-direction: row;
-    justify-content: right;
+    width: 100%;
+    gap: 40px;
+    justify-content: space-around;
+    font-weight: 500;
+    font-size: 1.5em;
   }
 
-  .cancel {
-    display: none;
+  .nav li {
+    padding: 5px 20px;
   }
 
-  .container {
-    background-size: 90%;
-    height: 120vh;
+  .nav li:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #227150;
+    scale: 1.1;
+    border-radius: 3px;
+    color: #ebf0ee;
+  }
+
+  .front {
+    margin-top: 3em;
   }
 
   .menu li {
@@ -708,21 +733,19 @@ textarea {
     background-color: #c1c7d0d1;
   }
 
-  .bg-img {
-    margin-top: 78px;
-    background-size: cover;
-    height: 20em;
-    flex-grow: 1;
+  .modal-container {
+    margin-top: 10px;
+    height: 90%;
   }
 
-  .open-pop {
-    display: flex;
-    justify-content: center;
-    z-index: 10;
+  .modal-item h2 {
+    margin-top: 30px;
   }
 
   .buttons {
+    justify-content: center;
     width: 100%;
+    gap: 150px;
   }
 
   #live {
@@ -803,5 +826,41 @@ textarea {
 
   .text {
     margin-top: 12em;
+  }
+
+  .modal-container {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    background-size: cover;
+  }
+
+  .head {
+    margin-top: 15em;
+  }
+
+  .text {
+    margin-top: 5em;
+    width: 40%;
+  }
+
+  .modal-container {
+    width: 60%;
+    height: 70%;
+  }
+
+  .buttons {
+    margin-top: 0;
+  }
+
+  .touch {
+    width: 40%;
+  }
+
+  .connect {
+    width: 30%;
   }
 }
