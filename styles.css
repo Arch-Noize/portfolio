@@ -1,4 +1,7 @@
 /* Universal selectors */
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   padding: 0;
@@ -26,6 +29,10 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.nav {
+  display: none;
 }
 
 .btn {
@@ -104,17 +111,16 @@ a {
   margin-right: 20px;
 }
 
-.container {
+.front {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
   align-items: center;
   padding: 45px;
   background-image: url("./Images/header_illustration.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 55% 0%;
+  margin-top: -0px;
 }
 
 .socials {
@@ -175,13 +181,14 @@ a {
 /* Recent Works section */
 
 .portfolio {
+  scroll-margin-top: 100px;
   width: 100%;
   display: flex;
   justify-content: center;
   padding: 16px;
   font-size: 1.7em;
   margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 /* Story+Post cards */
@@ -427,6 +434,7 @@ a {
 }
 
 .about {
+  scroll-margin-top: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -539,6 +547,7 @@ a {
 /* Form Section */
 
 .form-container {
+  scroll-margin-top: 100px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -627,15 +636,16 @@ textarea {
   .head,
   .about,
   .touch {
-    width: 40%;
+    width: 50%;
   }
 
   .head {
-    margin-top: 2em;
+    margin-top: 3em;
   }
 
   .text {
-    margin-top: 10em;
+    margin-top: -10px;
+   width: 60%;
   }
 
   .text-a {
@@ -651,24 +661,42 @@ textarea {
     display: none;
   }
 
-  .menu {
+  .nav {
     display: flex;
-    font-weight: 600;
-    font-size: 15px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid #dfe1e6;
+    z-index: 1;
   }
 
-  .menu ul {
+  .nav ul {
+    display: flex;
     flex-direction: row;
-    justify-content: right;
+    width: 100%;
+    gap: 40px;
+    justify-content: space-around;
+    font-weight: 500;
+    font-size: 1.5em;
   }
 
-  .cancel {
-    display: none;
+  .nav li {
+    padding: 5px 20px;
   }
 
-  .container {
-    background-size: 90%;
-    height: 120vh;
+  .nav li:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #227150;
+    scale: 1.1;
+    border-radius: 3px;
+    color: #ebf0ee;
+  }
+
+  .front {
+    margin-top: 3em;
   }
 
   .menu li {
