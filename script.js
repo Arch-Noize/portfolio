@@ -25,7 +25,7 @@ items.forEach((menuItem) => {
 const story = [
   {
     id: 1,
-    name: 'Page-To-Page Library',
+    name: 'Page-To-Page',
     tech: ['Ruby on Rails', 'React/Redux', 'Rails API'],
     desc: 'This website was done collaboratively from the ground up. Using React/Redux for the frontend and our own Rails API for the backend. Please, look into my team as well!',
     image: './Images/portfolio/Library.png',
