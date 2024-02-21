@@ -706,10 +706,10 @@ textarea {
 
   .nav li {
     padding: 5px 20px;
+    transition: 0.3s;
   }
 
   .nav li:hover {
-    transition: all 0.3s ease-in-out;
     background-color: #227150;
     scale: 1.1;
     border-radius: 3px;
