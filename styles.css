@@ -120,7 +120,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 55% 0%;
-  margin-top: -0px;
+  margin-top: -0;
 }
 
 .socials {
@@ -371,6 +371,11 @@ a {
   scale: 1.2;
 }
 
+.story-btn > .btn {
+  width: 190px;
+  align-items: center;
+}
+
 .modal-item .btn:hover {
   scale: 1.1;
 }
@@ -382,11 +387,6 @@ a {
   padding: 8px 12px;
   font-size: 20px;
   margin-top: 30px;
-}
-
-.story-btn > .btn {
-  width: 190px;
-  align-items: center;
 }
 
 .story-btn.disabled {
@@ -645,7 +645,7 @@ textarea {
 
   .text {
     margin-top: -10px;
-   width: 60%;
+    width: 60%;
   }
 
   .text-a {
@@ -659,6 +659,14 @@ textarea {
 
   .burger {
     display: none;
+  }
+
+  .card h2 {
+    font-size: 1.9em;
+  }
+
+  .card li {
+    font-size: 1em;
   }
 
   .nav {
@@ -697,10 +705,6 @@ textarea {
 
   .front {
     margin-top: 3em;
-  }
-
-  .menu li {
-    padding: 10px;
   }
 
   .me-container {
@@ -756,14 +760,6 @@ textarea {
   #source {
     background-size: 17%;
     background-position: 95% 50%;
-  }
-
-  .card h2 {
-    font-size: 1.9em;
-  }
-
-  .card li {
-    font-size: 1em;
   }
 
   .a-container {
