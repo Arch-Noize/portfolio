@@ -83,7 +83,7 @@ const recent = document.querySelector('.works');
 
 function stories() {
   let displayStory = story.map((item) => `<div class="recent">
-              <div class="story">
+              <div class="story" style="background: no-repeat 50% 10% url(${item.image}); background-size: contain;">
                 <div class="grid">
                   <div class="grid-item">
                       <h2>${item.name}</h2>
