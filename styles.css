@@ -258,13 +258,13 @@ a {
 }
 
 .modal-item li {
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: #3a4a42;
   background-color: #ebf0ee;
   border-radius: 4px;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 0px 5px;
   transition: 0.3s;
 }
 
@@ -355,7 +355,10 @@ a {
   width: 100%;
   display: flex;
   gap: 18px;
-  position: relative;
+}
+
+.modal-img {
+  margin-bottom: -5em;
 }
 
 .modal-container p {
@@ -367,15 +370,18 @@ a {
   font-size: 2.8em;
   font-weight: 600;
   line-height: 44px;
+  background-color: #fff;
+  text-align: center;
+  margin-top: -20px;
 }
 
 .modal-item ul {
   width: 100%;
-  font-size: 1.3em;
+  font-size: 1.2em;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 16px;
   font-weight: 600;
+  margin-top: 25px;
 }
 
 .modal-item li:hover {
@@ -385,8 +391,10 @@ a {
 }
 
 .story-btn > .btn {
-  width: 190px;
+  width: 140px;
   align-items: center;
+  margin-left: -20px;
+  margin-right: 10px;
 }
 
 .modal-item .btn:hover {
@@ -399,7 +407,7 @@ a {
   align-items: flex-start;
   padding: 8px 12px;
   font-size: 20px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .story-btn.disabled {
@@ -753,10 +761,6 @@ textarea {
   .modal-container {
     margin-top: 10px;
     height: 90%;
-  }
-
-  .modal-item h2 {
-    margin-top: 30px;
   }
 
   .buttons {
