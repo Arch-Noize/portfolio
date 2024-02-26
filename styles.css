@@ -658,7 +658,7 @@ textarea {
   box-shadow: 1px 6px 8px #c71a1a78;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .head,
   .about,
   .touch {
@@ -761,6 +761,10 @@ textarea {
   .modal-container {
     margin-top: 10px;
     height: 90%;
+  }
+
+  .modal-item h2 {
+    margin-top: 30px;
   }
 
   .buttons {
