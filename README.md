@@ -37,7 +37,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-You can find a live version of the website [here](https://arch-noize.github.io/portfolio-microverse/)!
+You can find a live version of the website [here](https://arch-noize.github.io/portfolio/)!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
